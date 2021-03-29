@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="算法题：&#10;假设按照升序排序的数组在预先未知的某个点上进行了旋转。&#10;( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。&#10;编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。&#10;&#10;示例 1:&#10;输入: nums = [2,5,6,0,0,1,2], target = 0&#10;输出: true&#10;示例 2:&#10;输入: nums = [2,5,6,0,0,1,2], target = 3&#10;输出: false">
-      <change afterPath="$PROJECT_DIR$/src/删除排序链表中的重复元素2/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/删除排序链表中的重复元素2/Solution.java" afterDir="false" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/删除排序链表中的重复元素2简单/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/删除排序链表中的重复元素2简单/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="删除排序链表中的重复元素2简单" />
       <recent name="不同路径2" />
       <recent name="所有排序方法" />
       <recent name="组合总和2" />
       <recent name="外观数列" />
-      <recent name="重建二叉树" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -230,7 +230,7 @@
       <workItem from="1616418785361" duration="3769000" />
       <workItem from="1616503339093" duration="6828000" />
       <workItem from="1616899697711" duration="3377000" />
-      <workItem from="1617024391474" duration="4102000" />
+      <workItem from="1617024391474" duration="4608000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -281,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616513464937</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,2,3,3,4,4,5]&#10;输出：[1,2,5]&#10;输入：head = [1,1,1,2,3]&#10;输出：[2,3]">
+      <created>1617030439299</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617030439299</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,13 +301,14 @@
     <MESSAGE value="算法题：&#10;给定一个二维网格和一个单词，找出该单词是否存在于网格中。&#10;单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。&#10;&#10;示例:&#10;board =&#10;[  ['A','B','C','E'],&#10;  ['S','F','C','S'],&#10;  ['A','D','E','E']]&#10;给定 word = &quot;ABCCED&quot;, 返回 true&#10;给定 word = &quot;SEE&quot;, 返回 true&#10;给定 word = &quot;ABCB&quot;, 返回 false" />
     <MESSAGE value="算法题：&#10;给定一个增序排列数组 nums ，你需要在 原地 删除重复出现的元素，使得每个元素最多出现两次，返回移除后数组的新长度。&#10;不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。&#10;输入：nums = [1,1,1,2,2,3]&#10;输出：5, nums = [1,1,2,2,3]&#10;解释：函数应返回新长度 length = 5, 并且原数组的前五个元素被修改为 1, 1, 2, 2, 3 。 你不需要考虑数组中超出新长度后面的元素。" />
     <MESSAGE value="算法题：&#10;假设按照升序排序的数组在预先未知的某个点上进行了旋转。&#10;( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。&#10;编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。&#10;&#10;示例 1:&#10;输入: nums = [2,5,6,0,0,1,2], target = 0&#10;输出: true&#10;示例 2:&#10;输入: nums = [2,5,6,0,0,1,2], target = 3&#10;输出: false" />
-    <option name="LAST_COMMIT_MESSAGE" value="算法题：&#10;假设按照升序排序的数组在预先未知的某个点上进行了旋转。&#10;( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。&#10;编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。&#10;&#10;示例 1:&#10;输入: nums = [2,5,6,0,0,1,2], target = 0&#10;输出: true&#10;示例 2:&#10;输入: nums = [2,5,6,0,0,1,2], target = 3&#10;输出: false" />
+    <MESSAGE value="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,2,3,3,4,4,5]&#10;输出：[1,2,5]&#10;输入：head = [1,1,1,2,3]&#10;输出：[2,3]" />
+    <option name="LAST_COMMIT_MESSAGE" value="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,2,3,3,4,4,5]&#10;输出：[1,2,5]&#10;输入：head = [1,1,1,2,3]&#10;输出：[2,3]" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1616930948114">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1617030436439">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1616930948114" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1617030436439" />
     <state x="549" y="157" key="FileChooserDialogImpl" timestamp="1616330146617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -345,10 +353,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="25" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616248228421" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1616513576493">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1617030604982">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1616513576493" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617030604982" />
     <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1617026657158">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
