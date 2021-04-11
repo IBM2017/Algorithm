@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/子集II/Solution.java" afterDir="false" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="算法题：&#10;一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：&#10;'A' -&gt; 1&#10;'B' -&gt; 2&#10;...&#10;'Z' -&gt; 26&#10;要 解码 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，&quot;111&quot; 可以将 &quot;1&quot; 中的每个 &quot;1&quot; 映射为 &quot;A&quot; ，从而得到 &quot;AAA&quot; ，或者可以将 &quot;11&quot; 和 &quot;1&quot;（分别为 &quot;K&quot; 和 &quot;A&quot; ）映射为 &quot;KA&quot; 。注意，&quot;06&quot; 不能映射为 &quot;F&quot; ，因为 &quot;6&quot; 和 &quot;06&quot; 不同。&#10;给你一个只含数字的 非空 字符串 num ，请计算并返回 解码 方法的 总数 。&#10;题目数据保证答案肯定是一个 32 位 的整数。&#10;示例 1：&#10;输入：s = &quot;12&quot;&#10;输出：2&#10;解释：它可以解码为 &quot;AB&quot;（1 2）或者 &quot;L&quot;（12）。&#10;示例 2：&#10;输入：s = &quot;226&quot;&#10;输出：3&#10;解释：它可以解码为 &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), 或者 &quot;BBF&quot; (2 2 6) 。&#10;示例 3：&#10;输入：s = &quot;0&quot;&#10;输出：0&#10;解释：没有字符映射到以 0 开头的数字。含有 0 的有效映射是 'J' -&gt; &quot;10&quot; 和 'T'-&gt; &quot;20&quot; 。由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。&#10;示例 4：&#10;输入：s = &quot;06&quot;&#10;输出：0&#10;解释：&quot;06&quot; 不能映射到 &quot;F&quot; ，因为字符串开头的 0 无法指向一个有效的字符。 ">
+      <change afterPath="$PROJECT_DIR$/src/解码方法/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,6 +233,7 @@
       <workItem from="1617631164762" duration="3160000" />
       <workItem from="1617886835374" duration="5459000" />
       <workItem from="1618064043389" duration="2066000" />
+      <workItem from="1618134121253" duration="4245000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -328,13 +329,14 @@
     <MESSAGE value="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除所有重复的元素，使每个元素 只出现一次 。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,1,2]&#10;输出：[1,2]&#10;输入：head = [1,1,2,3,3]&#10;输出：[1,2,3]" />
     <MESSAGE value="算法题：&#10;给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。&#10;你应当 保留 两个分区中每个节点的初始相对位置。&#10;输入：head = [1,4,3,2,5,2], x = 3&#10;输出：[1,2,2,4,3,5]&#10;输入：head = [2,1], x = 2&#10;输出：[1,2]" />
     <MESSAGE value="算法题：&#10;给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。&#10;初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。你可以假设 nums1 的空间大小等于 m + n，这样它就有足够的空间保存来自 nums2 的元素。&#10;输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3&#10;输出：[1,2,2,3,5,6]&#10;示例 2：&#10;输入：nums1 = [1], m = 1, nums2 = [], n = 0&#10;输出：[1]" />
-    <option name="LAST_COMMIT_MESSAGE" value="算法题：&#10;给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。&#10;初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。你可以假设 nums1 的空间大小等于 m + n，这样它就有足够的空间保存来自 nums2 的元素。&#10;输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3&#10;输出：[1,2,2,3,5,6]&#10;示例 2：&#10;输入：nums1 = [1], m = 1, nums2 = [], n = 0&#10;输出：[1]" />
+    <MESSAGE value="算法题：&#10;一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：&#10;'A' -&gt; 1&#10;'B' -&gt; 2&#10;...&#10;'Z' -&gt; 26&#10;要 解码 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，&quot;111&quot; 可以将 &quot;1&quot; 中的每个 &quot;1&quot; 映射为 &quot;A&quot; ，从而得到 &quot;AAA&quot; ，或者可以将 &quot;11&quot; 和 &quot;1&quot;（分别为 &quot;K&quot; 和 &quot;A&quot; ）映射为 &quot;KA&quot; 。注意，&quot;06&quot; 不能映射为 &quot;F&quot; ，因为 &quot;6&quot; 和 &quot;06&quot; 不同。&#10;给你一个只含数字的 非空 字符串 num ，请计算并返回 解码 方法的 总数 。&#10;题目数据保证答案肯定是一个 32 位 的整数。&#10;示例 1：&#10;输入：s = &quot;12&quot;&#10;输出：2&#10;解释：它可以解码为 &quot;AB&quot;（1 2）或者 &quot;L&quot;（12）。&#10;示例 2：&#10;输入：s = &quot;226&quot;&#10;输出：3&#10;解释：它可以解码为 &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), 或者 &quot;BBF&quot; (2 2 6) 。&#10;示例 3：&#10;输入：s = &quot;0&quot;&#10;输出：0&#10;解释：没有字符映射到以 0 开头的数字。含有 0 的有效映射是 'J' -&gt; &quot;10&quot; 和 'T'-&gt; &quot;20&quot; 。由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。&#10;示例 4：&#10;输入：s = &quot;06&quot;&#10;输出：0&#10;解释：&quot;06&quot; 不能映射到 &quot;F&quot; ，因为字符串开头的 0 无法指向一个有效的字符。 " />
+    <option name="LAST_COMMIT_MESSAGE" value="算法题：&#10;一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：&#10;'A' -&gt; 1&#10;'B' -&gt; 2&#10;...&#10;'Z' -&gt; 26&#10;要 解码 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，&quot;111&quot; 可以将 &quot;1&quot; 中的每个 &quot;1&quot; 映射为 &quot;A&quot; ，从而得到 &quot;AAA&quot; ，或者可以将 &quot;11&quot; 和 &quot;1&quot;（分别为 &quot;K&quot; 和 &quot;A&quot; ）映射为 &quot;KA&quot; 。注意，&quot;06&quot; 不能映射为 &quot;F&quot; ，因为 &quot;6&quot; 和 &quot;06&quot; 不同。&#10;给你一个只含数字的 非空 字符串 num ，请计算并返回 解码 方法的 总数 。&#10;题目数据保证答案肯定是一个 32 位 的整数。&#10;示例 1：&#10;输入：s = &quot;12&quot;&#10;输出：2&#10;解释：它可以解码为 &quot;AB&quot;（1 2）或者 &quot;L&quot;（12）。&#10;示例 2：&#10;输入：s = &quot;226&quot;&#10;输出：3&#10;解释：它可以解码为 &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), 或者 &quot;BBF&quot; (2 2 6) 。&#10;示例 3：&#10;输入：s = &quot;0&quot;&#10;输出：0&#10;解释：没有字符映射到以 0 开头的数字。含有 0 的有效映射是 'J' -&gt; &quot;10&quot; 和 'T'-&gt; &quot;20&quot; 。由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。&#10;示例 4：&#10;输入：s = &quot;06&quot;&#10;输出：0&#10;解释：&quot;06&quot; 不能映射到 &quot;F&quot; ，因为字符串开头的 0 无法指向一个有效的字符。 " />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1617893143780">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1618070829111">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1617893143780" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1618070829111" />
     <state x="549" y="157" key="FileChooserDialogImpl" timestamp="1616330146617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -379,14 +381,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="25" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616248228421" />
-    <state x="76" y="84" key="Vcs.Push.Dialog.v2" timestamp="1617893177241">
+    <state x="76" y="84" key="Vcs.Push.Dialog.v2" timestamp="1618070839588">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="76" y="84" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1617893177241" />
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1618064043475">
+    <state x="76" y="84" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618070839588" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1618138926931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1618064043475" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1618138926931" />
     <state x="277" y="23" key="new project wizard" timestamp="1616424211337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
