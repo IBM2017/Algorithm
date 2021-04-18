@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="算法题：&#10;给定一个二叉树的根节点 root ，返回它的 中序 遍历。">
-      <change afterPath="$PROJECT_DIR$/src/不同的二叉搜索树2/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/不同的二叉搜索树2/TreeNode.java" afterDir="false" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="算法题：&#10;给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。&#10;输入：3&#10;输出：&#10;[&#10;  [1,null,3,2],&#10;  [3,2,null,1],&#10;  [3,1,null,null,2],&#10;  [2,1,3],&#10;  [1,null,2,null,3]&#10;]&#10;解释：&#10;以上的输出对应以下 5 种不同结构的二叉搜索树：&#10;&#10;   1         3     3      2      1&#10;    \       /     /      / \      \&#10;     3     2     1      1   3      2&#10;    /     /       \                 \&#10;   2     1         2                 3">
+      <change afterPath="$PROJECT_DIR$/src/不同的二叉搜索树/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +238,8 @@
       <workItem from="1618233032048" duration="6273000" />
       <workItem from="1618576343109" duration="1849000" />
       <workItem from="1618632097487" duration="1804000" />
-      <workItem from="1618644872495" duration="612000" />
+      <workItem from="1618644872495" duration="1500000" />
+      <workItem from="1618717134109" duration="252000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618632422930</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="算法题：&#10;给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。&#10;输入：3&#10;输出：&#10;[&#10;  [1,null,3,2],&#10;  [3,2,null,1],&#10;  [3,1,null,null,2],&#10;  [2,1,3],&#10;  [1,null,2,null,3]&#10;]&#10;解释：&#10;以上的输出对应以下 5 种不同结构的二叉搜索树：&#10;&#10;   1         3     3      2      1&#10;    \       /     /      / \      \&#10;     3     2     1      1   3      2&#10;    /     /       \                 \&#10;   2     1         2                 3">
+      <created>1618647002940</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1618647002940</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,13 +374,14 @@
     <MESSAGE value="算法题：&#10;给你单链表的头指针 head 和两个整数 left 和 right ，其中 left &lt;= right 。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。&#10;示例 1：&#10;输入：head = [1,2,3,4,5], left = 2, right = 4&#10;输出：[1,4,3,2,5]&#10;示例 2：&#10;输入：head = [5], left = 1, right = 1&#10;输出：[5]" />
     <MESSAGE value="算法题：&#10;给定一个只包含数字的字符串，用以表示一个 IP 地址，返回所有可能从 s 获得的 有效 IP 地址 。你可以按任何顺序返回答案。&#10;有效 IP 地址 正好由四个整数（每个整数位于 0 到 255 之间组成，且不能含有前导 0），整数之间用 '.' 分隔。&#10;例如：&quot;0.1.2.201&quot; 和 &quot;192.168.1.1&quot; 是 有效 IP 地址，但是 &quot;0.011.255.245&quot;、&quot;192.168.1.312&quot; 和 &quot;192.168@1.1&quot; 是 无效 IP 地址。&#10;示例 1：&#10;输入：s = &quot;25525511135&quot;&#10;输出：[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]&#10;示例 2：&#10;输入：s = &quot;0000&quot;&#10;输出：[&quot;0.0.0.0&quot;]" />
     <MESSAGE value="算法题：&#10;给定一个二叉树的根节点 root ，返回它的 中序 遍历。" />
-    <option name="LAST_COMMIT_MESSAGE" value="算法题：&#10;给定一个二叉树的根节点 root ，返回它的 中序 遍历。" />
+    <MESSAGE value="算法题：&#10;给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。&#10;输入：3&#10;输出：&#10;[&#10;  [1,null,3,2],&#10;  [3,2,null,1],&#10;  [3,1,null,null,2],&#10;  [2,1,3],&#10;  [1,null,2,null,3]&#10;]&#10;解释：&#10;以上的输出对应以下 5 种不同结构的二叉搜索树：&#10;&#10;   1         3     3      2      1&#10;    \       /     /      / \      \&#10;     3     2     1      1   3      2&#10;    /     /       \                 \&#10;   2     1         2                 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="算法题：&#10;给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。&#10;输入：3&#10;输出：&#10;[&#10;  [1,null,3,2],&#10;  [3,2,null,1],&#10;  [3,1,null,null,2],&#10;  [2,1,3],&#10;  [1,null,2,null,3]&#10;]&#10;解释：&#10;以上的输出对应以下 5 种不同结构的二叉搜索树：&#10;&#10;   1         3     3      2      1&#10;    \       /     /      / \      \&#10;     3     2     1      1   3      2&#10;    /     /       \                 \&#10;   2     1         2                 3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1618632459080">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1618717209320">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1618632459080" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1618717209320" />
     <state x="549" y="157" key="FileChooserDialogImpl" timestamp="1616330146617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -418,10 +426,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="25" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616248228421" />
-    <state x="76" y="84" key="Vcs.Push.Dialog.v2" timestamp="1618632568655">
+    <state x="-77" y="90" key="Vcs.Push.Dialog.v2" timestamp="1618647018286">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="76" y="84" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618632568655" />
+    <state x="-77" y="90" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618647018286" />
     <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1618644877138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
