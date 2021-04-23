@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/验证二叉搜索树/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/验证二叉搜索树/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +240,9 @@
       <workItem from="1618644872495" duration="1500000" />
       <workItem from="1618717134109" duration="2525000" />
       <workItem from="1618730732144" duration="38000" />
-      <workItem from="1618845913001" duration="2327000" />
+      <workItem from="1618845913001" duration="2476000" />
+      <workItem from="1619017125908" duration="808000" />
+      <workItem from="1619186576205" duration="227000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -370,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618722077548</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="给定一个二叉树，判断其是否是一个有效的二叉搜索树。&#10;假设一个二叉搜索树具有如下特征：&#10;节点的左子树只包含小于当前节点的数。&#10;节点的右子树只包含大于当前节点的数。&#10;所有左子树和右子树自身必须也是二叉搜索树。&#10;示例 1:&#10;输入:&#10;    2&#10;   / \&#10;  1   3&#10;输出: true&#10;示例 2:&#10;输入:&#10;    5&#10;   / \&#10;  1   4&#10;     / \&#10;    3   6&#10;输出: false">
+      <created>1618848575977</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1618848575977</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,13 +401,14 @@
     <MESSAGE value="算法题：&#10;给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。&#10;输入：3&#10;输出：&#10;[&#10;  [1,null,3,2],&#10;  [3,2,null,1],&#10;  [3,1,null,null,2],&#10;  [2,1,3],&#10;  [1,null,2,null,3]&#10;]&#10;解释：&#10;以上的输出对应以下 5 种不同结构的二叉搜索树：&#10;&#10;   1         3     3      2      1&#10;    \       /     /      / \      \&#10;     3     2     1      1   3      2&#10;    /     /       \                 \&#10;   2     1         2                 3" />
     <MESSAGE value="给定一个整数 n，求以 1 ... n 为节点组成的二叉搜索树有多少种？&#10;&#10;示例:&#10;输入: 3&#10;输出: 5&#10;解释:&#10;给定 n = 3, 一共有 5 种不同结构的二叉搜索树:&#10;&#10;   1         3     3      2      1&#10;    \       /     /      / \      \&#10;     3     2     1      1   3      2&#10;    /     /       \                 \&#10;   2     1         2                 3" />
     <MESSAGE value="给定三个字符串 s1、s2、s3，请你帮忙验证 s3 是否是由 s1 和 s2 交错 组成的。&#10;两个字符串 s 和 t 交错 的定义与过程如下，其中每个字符串都会被分割成若干 非空 子字符串：&#10;s = s1 + s2 + ... + sn&#10;t = t1 + t2 + ... + tm&#10;|n - m| &lt;= 1&#10;交错 是 s1 + t1 + s2 + t2 + s3 + t3 + ... 或者 t1 + s1 + t2 + s2 + t3 + s3 + ...&#10;提示：a + b 意味着字符串 a 和 b 连接。&#10;示例 1：&#10;输入：s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbcbcac&quot;&#10;输出：true&#10;示例 2：&#10;输入：s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbbaccc&quot;&#10;输出：false&#10;示例 3：&#10;输入：s1 = &quot;&quot;, s2 = &quot;&quot;, s3 = &quot;&quot;&#10;输出：true" />
-    <option name="LAST_COMMIT_MESSAGE" value="给定三个字符串 s1、s2、s3，请你帮忙验证 s3 是否是由 s1 和 s2 交错 组成的。&#10;两个字符串 s 和 t 交错 的定义与过程如下，其中每个字符串都会被分割成若干 非空 子字符串：&#10;s = s1 + s2 + ... + sn&#10;t = t1 + t2 + ... + tm&#10;|n - m| &lt;= 1&#10;交错 是 s1 + t1 + s2 + t2 + s3 + t3 + ... 或者 t1 + s1 + t2 + s2 + t3 + s3 + ...&#10;提示：a + b 意味着字符串 a 和 b 连接。&#10;示例 1：&#10;输入：s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbcbcac&quot;&#10;输出：true&#10;示例 2：&#10;输入：s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbbaccc&quot;&#10;输出：false&#10;示例 3：&#10;输入：s1 = &quot;&quot;, s2 = &quot;&quot;, s3 = &quot;&quot;&#10;输出：true" />
+    <MESSAGE value="给定一个二叉树，判断其是否是一个有效的二叉搜索树。&#10;假设一个二叉搜索树具有如下特征：&#10;节点的左子树只包含小于当前节点的数。&#10;节点的右子树只包含大于当前节点的数。&#10;所有左子树和右子树自身必须也是二叉搜索树。&#10;示例 1:&#10;输入:&#10;    2&#10;   / \&#10;  1   3&#10;输出: true&#10;示例 2:&#10;输入:&#10;    5&#10;   / \&#10;  1   4&#10;     / \&#10;    3   6&#10;输出: false" />
+    <option name="LAST_COMMIT_MESSAGE" value="给定一个二叉树，判断其是否是一个有效的二叉搜索树。&#10;假设一个二叉搜索树具有如下特征：&#10;节点的左子树只包含小于当前节点的数。&#10;节点的右子树只包含大于当前节点的数。&#10;所有左子树和右子树自身必须也是二叉搜索树。&#10;示例 1:&#10;输入:&#10;    2&#10;   / \&#10;  1   3&#10;输出: true&#10;示例 2:&#10;输入:&#10;    5&#10;   / \&#10;  1   4&#10;     / \&#10;    3   6&#10;输出: false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1618722076314">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1618848573810">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1618722076314" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1618848573810" />
     <state x="0" y="71" key="DiffContextDialog" timestamp="1618722019419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -449,14 +457,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="25" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616248228421" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1618722134942">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1618848594401">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618722134942" />
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1618730734193">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1618848594401" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1619186681754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1618730734193" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619186681754" />
     <state x="46" y="250" key="git4idea.merge.GitPullDialog" timestamp="1618150145759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
