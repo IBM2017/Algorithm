@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/对称二叉树/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/对称二叉树/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树的层序遍历/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树的层序遍历/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/对称二叉树" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/二叉树的层序遍历" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -64,6 +64,10 @@
       <recent name="分隔链表" />
       <recent name="删除排序链表中的重复元素2简单" />
       <recent name="不同路径2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\力扣算法\src\二叉树的层序遍历" />
+      <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -244,7 +248,8 @@
       <workItem from="1618730732144" duration="38000" />
       <workItem from="1618845913001" duration="2476000" />
       <workItem from="1619017125908" duration="808000" />
-      <workItem from="1619186576205" duration="1145000" />
+      <workItem from="1619186576205" duration="1640000" />
+      <workItem from="1619236919735" duration="697000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -393,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619187457071</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="给定一个二叉树，检查它是否是镜像对称的。&#10;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&#10;&#10;    1&#10;   / \&#10;  2   2&#10; / \ / \&#10;3  4 4  3&#10;但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:&#10;    1&#10;   / \&#10;  2   2&#10;   \   \&#10;   3    3">
+      <created>1619187896694</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1619187896694</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,13 +432,14 @@
     <MESSAGE value="给定一个二叉树，判断其是否是一个有效的二叉搜索树。&#10;假设一个二叉搜索树具有如下特征：&#10;节点的左子树只包含小于当前节点的数。&#10;节点的右子树只包含大于当前节点的数。&#10;所有左子树和右子树自身必须也是二叉搜索树。&#10;示例 1:&#10;输入:&#10;    2&#10;   / \&#10;  1   3&#10;输出: true&#10;示例 2:&#10;输入:&#10;    5&#10;   / \&#10;  1   4&#10;     / \&#10;    3   6&#10;输出: false" />
     <MESSAGE value="给你二叉搜索树的根节点 root ，该树中的两个节点被错误地交换。请在不改变其结构的情况下，恢复这棵树。&#10;&#10;进阶：使用 O(n) 空间复杂度的解法很容易实现。你能想出一个只使用常数空间的解决方案吗？" />
     <MESSAGE value="给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。&#10;如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。" />
-    <option name="LAST_COMMIT_MESSAGE" value="给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。&#10;如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。" />
+    <MESSAGE value="给定一个二叉树，检查它是否是镜像对称的。&#10;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&#10;&#10;    1&#10;   / \&#10;  2   2&#10; / \ / \&#10;3  4 4  3&#10;但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:&#10;    1&#10;   / \&#10;  2   2&#10;   \   \&#10;   3    3" />
+    <option name="LAST_COMMIT_MESSAGE" value="给定一个二叉树，检查它是否是镜像对称的。&#10;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&#10;&#10;    1&#10;   / \&#10;  2   2&#10; / \ / \&#10;3  4 4  3&#10;但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:&#10;    1&#10;   / \&#10;  2   2&#10;   \   \&#10;   3    3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1619187455673">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1619187895406">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619187455673" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619187895406" />
     <state x="0" y="71" key="DiffContextDialog" timestamp="1618722019419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -475,14 +488,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="25" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616248228421" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1619187466837">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1619187907097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619187466837" />
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1619186681754">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619187907097" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1619237156265">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619186681754" />
+    <state x="461" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1619237156265" />
     <state x="46" y="250" key="git4idea.merge.GitPullDialog" timestamp="1618150145759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
