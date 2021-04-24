@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/二叉树的层序遍历/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/二叉树的层序遍历/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树的锯齿形层序遍历/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树的锯齿形层序遍历/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/二叉树的层序遍历" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/二叉树的锯齿形层序遍历" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,6 +66,7 @@
       <recent name="不同路径2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\力扣算法\src\二叉树的锯齿形层序遍历" />
       <recent name="F:\力扣算法\src\二叉树的层序遍历" />
       <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
@@ -249,7 +250,7 @@
       <workItem from="1618845913001" duration="2476000" />
       <workItem from="1619017125908" duration="808000" />
       <workItem from="1619186576205" duration="1640000" />
-      <workItem from="1619236919735" duration="697000" />
+      <workItem from="1619236919735" duration="2330000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -405,11 +406,59 @@
       <option name="project" value="LOCAL" />
       <updated>1619187896694</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。&#10;示例：&#10;二叉树：[3,9,20,null,null,15,7],&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回其层序遍历结果：&#10;[&#10;  [3],&#10;  [9,20],&#10;  [15,7]&#10;]">
+      <created>1619237893174</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1619237893174</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="第一次全部提交" />
@@ -433,13 +482,14 @@
     <MESSAGE value="给你二叉搜索树的根节点 root ，该树中的两个节点被错误地交换。请在不改变其结构的情况下，恢复这棵树。&#10;&#10;进阶：使用 O(n) 空间复杂度的解法很容易实现。你能想出一个只使用常数空间的解决方案吗？" />
     <MESSAGE value="给你两棵二叉树的根节点 p 和 q ，编写一个函数来检验这两棵树是否相同。&#10;如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。" />
     <MESSAGE value="给定一个二叉树，检查它是否是镜像对称的。&#10;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&#10;&#10;    1&#10;   / \&#10;  2   2&#10; / \ / \&#10;3  4 4  3&#10;但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:&#10;    1&#10;   / \&#10;  2   2&#10;   \   \&#10;   3    3" />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个二叉树，检查它是否是镜像对称的。&#10;例如，二叉树 [1,2,2,3,4,4,3] 是对称的。&#10;&#10;    1&#10;   / \&#10;  2   2&#10; / \ / \&#10;3  4 4  3&#10;但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:&#10;    1&#10;   / \&#10;  2   2&#10;   \   \&#10;   3    3" />
+    <MESSAGE value="给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。&#10;示例：&#10;二叉树：[3,9,20,null,null,15,7],&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回其层序遍历结果：&#10;[&#10;  [3],&#10;  [9,20],&#10;  [15,7]&#10;]" />
+    <option name="LAST_COMMIT_MESSAGE" value="给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。&#10;示例：&#10;二叉树：[3,9,20,null,null,15,7],&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回其层序遍历结果：&#10;[&#10;  [3],&#10;  [9,20],&#10;  [15,7]&#10;]" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1619187895406">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1619237891027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619187895406" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619237891027" />
     <state x="0" y="71" key="DiffContextDialog" timestamp="1618722019419">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -488,10 +538,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="25" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1616248228421" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1619187907097">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1619238435208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619187907097" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619238435208" />
     <state x="461" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1619237156265">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
