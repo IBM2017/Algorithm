@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。&#10;本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。&#10;示例:&#10;给定的有序链表： [-10, -3, 0, 5, 9],&#10;一个可能的答案是：[0, -3, 9, -10, null, 5], 它可以表示下面这个高度平衡二叉搜索树：&#10;      0&#10;     / \&#10;   -3   9&#10;   /   /&#10; -10  5">
-      <change afterPath="$PROJECT_DIR$/src/平衡二叉树/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/平衡二叉树/TreeNode.java" afterDir="false" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个二叉树，判断它是否是高度平衡的二叉树。&#10;本题中，一棵高度平衡二叉树定义为：&#10;一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。">
+      <change afterPath="$PROJECT_DIR$/src/二叉树的最小深度/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/二叉树的最小深度/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +73,11 @@
       <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="二叉树的最小深度" />
       <recent name="平衡二叉树" />
       <recent name="有序链表转换二叉搜索树" />
       <recent name="将有序数组转换为二叉搜索树" />
       <recent name="二叉树的层序遍历2" />
-      <recent name="从中序与后序遍历序列构造二叉树" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -145,15 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -277,7 +276,8 @@
       <workItem from="1620393600490" duration="5263000" />
       <workItem from="1620400472161" duration="241000" />
       <workItem from="1620655778024" duration="1724000" />
-      <workItem from="1620740154618" duration="3773000" />
+      <workItem from="1620740154618" duration="4782000" />
+      <workItem from="1620818817269" duration="1600000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -489,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620743411548</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="给定一个二叉树，判断它是否是高度平衡的二叉树。&#10;本题中，一棵高度平衡二叉树定义为：&#10;一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。">
+      <created>1620744880426</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1620744880426</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +540,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="算法题：&#10;给定一个增序排列数组 nums ，你需要在 原地 删除重复出现的元素，使得每个元素最多出现两次，返回移除后数组的新长度。&#10;不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。&#10;输入：nums = [1,1,1,2,2,3]&#10;输出：5, nums = [1,1,2,2,3]&#10;解释：函数应返回新长度 length = 5, 并且原数组的前五个元素被修改为 1, 1, 2, 2, 3 。 你不需要考虑数组中超出新长度后面的元素。" />
     <MESSAGE value="算法题：&#10;假设按照升序排序的数组在预先未知的某个点上进行了旋转。&#10;( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。&#10;编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。&#10;&#10;示例 1:&#10;输入: nums = [2,5,6,0,0,1,2], target = 0&#10;输出: true&#10;示例 2:&#10;输入: nums = [2,5,6,0,0,1,2], target = 3&#10;输出: false" />
     <MESSAGE value="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,2,3,3,4,4,5]&#10;输出：[1,2,5]&#10;输入：head = [1,1,1,2,3]&#10;输出：[2,3]" />
     <MESSAGE value="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除所有重复的元素，使每个元素 只出现一次 。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,1,2]&#10;输出：[1,2]&#10;输入：head = [1,1,2,3,3]&#10;输出：[1,2,3]" />
@@ -558,7 +564,8 @@
     <MESSAGE value="给定一个二叉树，返回其节点值自底向上的层序遍历。 （即按从叶子节点所在层到根节点所在的层，逐层从左向右遍历）&#10;例如：&#10;给定二叉树 [3,9,20,null,null,15,7],&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回其自底向上的层序遍历为：&#10;[&#10;  [15,7],&#10;  [9,20],&#10;  [3]&#10;]" />
     <MESSAGE value="给你一个整数数组 nums ，其中元素已经按 升序 排列，请你将其转换为一棵 高度平衡 二叉搜索树。&#10;高度平衡 二叉树是一棵满足「每个节点的左右两个子树的高度差的绝对值不超过 1 」的二叉树。" />
     <MESSAGE value="给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。&#10;本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。&#10;示例:&#10;给定的有序链表： [-10, -3, 0, 5, 9],&#10;一个可能的答案是：[0, -3, 9, -10, null, 5], 它可以表示下面这个高度平衡二叉搜索树：&#10;      0&#10;     / \&#10;   -3   9&#10;   /   /&#10; -10  5" />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。&#10;本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。&#10;示例:&#10;给定的有序链表： [-10, -3, 0, 5, 9],&#10;一个可能的答案是：[0, -3, 9, -10, null, 5], 它可以表示下面这个高度平衡二叉搜索树：&#10;      0&#10;     / \&#10;   -3   9&#10;   /   /&#10; -10  5" />
+    <MESSAGE value="给定一个二叉树，判断它是否是高度平衡的二叉树。&#10;本题中，一棵高度平衡二叉树定义为：&#10;一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。" />
+    <option name="LAST_COMMIT_MESSAGE" value="给定一个二叉树，判断它是否是高度平衡的二叉树。&#10;本题中，一棵高度平衡二叉树定义为：&#10;一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
