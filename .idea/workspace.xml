@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个二叉树，找出其最小深度。&#10;最小深度是从根节点到最近叶子节点的最短路径上的节点数量。&#10;说明：叶子节点是指没有子节点的节点。">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/路径总和/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/路径总和/TreeNode.java" afterDir="false" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你二叉树的根节点root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。&#10;叶子节点 是指没有子节点的节点。">
+      <change afterPath="$PROJECT_DIR$/src/路径总和2/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/路径总和2/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,11 +74,11 @@
       <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="路径总和2" />
       <recent name="路径总和" />
       <recent name="二叉树的最小深度" />
       <recent name="平衡二叉树" />
       <recent name="有序链表转换二叉搜索树" />
-      <recent name="将有序数组转换为二叉搜索树" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -279,7 +278,7 @@
       <workItem from="1620400472161" duration="241000" />
       <workItem from="1620655778024" duration="1724000" />
       <workItem from="1620740154618" duration="4782000" />
-      <workItem from="1620818817269" duration="5023000" />
+      <workItem from="1620818817269" duration="7200000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -505,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620822287876</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="给你二叉树的根节点root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。&#10;叶子节点 是指没有子节点的节点。">
+      <created>1620828812009</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1620828812009</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +555,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,2,3,3,4,4,5]&#10;输出：[1,2,5]&#10;输入：head = [1,1,1,2,3]&#10;输出：[2,3]" />
     <MESSAGE value="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除所有重复的元素，使每个元素 只出现一次 。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,1,2]&#10;输出：[1,2]&#10;输入：head = [1,1,2,3,3]&#10;输出：[1,2,3]" />
     <MESSAGE value="算法题：&#10;给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。&#10;你应当 保留 两个分区中每个节点的初始相对位置。&#10;输入：head = [1,4,3,2,5,2], x = 3&#10;输出：[1,2,2,4,3,5]&#10;输入：head = [2,1], x = 2&#10;输出：[1,2]" />
     <MESSAGE value="算法题：&#10;给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。&#10;初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。你可以假设 nums1 的空间大小等于 m + n，这样它就有足够的空间保存来自 nums2 的元素。&#10;输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3&#10;输出：[1,2,2,3,5,6]&#10;示例 2：&#10;输入：nums1 = [1], m = 1, nums2 = [], n = 0&#10;输出：[1]" />
@@ -574,7 +579,8 @@
     <MESSAGE value="给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。&#10;本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。&#10;示例:&#10;给定的有序链表： [-10, -3, 0, 5, 9],&#10;一个可能的答案是：[0, -3, 9, -10, null, 5], 它可以表示下面这个高度平衡二叉搜索树：&#10;      0&#10;     / \&#10;   -3   9&#10;   /   /&#10; -10  5" />
     <MESSAGE value="给定一个二叉树，判断它是否是高度平衡的二叉树。&#10;本题中，一棵高度平衡二叉树定义为：&#10;一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。" />
     <MESSAGE value="给定一个二叉树，找出其最小深度。&#10;最小深度是从根节点到最近叶子节点的最短路径上的节点数量。&#10;说明：叶子节点是指没有子节点的节点。" />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个二叉树，找出其最小深度。&#10;最小深度是从根节点到最近叶子节点的最短路径上的节点数量。&#10;说明：叶子节点是指没有子节点的节点。" />
+    <MESSAGE value="给你二叉树的根节点root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。&#10;叶子节点 是指没有子节点的节点。" />
+    <option name="LAST_COMMIT_MESSAGE" value="给你二叉树的根节点root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。&#10;叶子节点 是指没有子节点的节点。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
