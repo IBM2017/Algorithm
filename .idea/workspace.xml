@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你二叉树的根结点 root ，请你将它展开为一个单链表：&#10;展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。&#10;展开后的单链表应该与二叉树 先序遍历 顺序相同。">
-      <change afterPath="$PROJECT_DIR$/src/不同的子序列/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/填充每个节点的下一个右侧节点指针/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/填充每个节点的下一个右侧节点指针/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,11 +74,11 @@
       <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="填充每个节点的下一个右侧节点指针" />
       <recent name="二叉树展开为链表" />
       <recent name="路径总和2" />
       <recent name="路径总和" />
       <recent name="二叉树的最小深度" />
-      <recent name="平衡二叉树" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -146,13 +147,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -281,6 +284,7 @@
       <workItem from="1620903970718" duration="3026000" />
       <workItem from="1620917817767" duration="44000" />
       <workItem from="1621159177480" duration="1120000" />
+      <workItem from="1621681718969" duration="2036000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
