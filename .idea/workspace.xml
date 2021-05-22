@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你二叉树的根结点 root ，请你将它展开为一个单链表：&#10;展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。&#10;展开后的单链表应该与二叉树 先序遍历 顺序相同。">
-      <change afterPath="$PROJECT_DIR$/src/填充每个节点的下一个右侧节点指针/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/填充每个节点的下一个右侧节点指针/Solution.java" afterDir="false" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。">
+      <change afterPath="$PROJECT_DIR$/src/填充每个节点的下一个右侧节点指针2/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/填充每个节点的下一个右侧节点指针2/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,11 +74,11 @@
       <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="填充每个节点的下一个右侧节点指针2" />
       <recent name="填充每个节点的下一个右侧节点指针" />
       <recent name="二叉树展开为链表" />
       <recent name="路径总和2" />
       <recent name="路径总和" />
-      <recent name="二叉树的最小深度" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -284,7 +284,7 @@
       <workItem from="1620903970718" duration="3026000" />
       <workItem from="1620917817767" duration="44000" />
       <workItem from="1621159177480" duration="1120000" />
-      <workItem from="1621681718969" duration="2036000" />
+      <workItem from="1621681718969" duration="5554000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
@@ -524,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620913448635</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。">
+      <created>1621684462260</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1621684462260</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,7 +575,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="算法题：&#10;给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。&#10;你应当 保留 两个分区中每个节点的初始相对位置。&#10;输入：head = [1,4,3,2,5,2], x = 3&#10;输出：[1,2,2,4,3,5]&#10;输入：head = [2,1], x = 2&#10;输出：[1,2]" />
     <MESSAGE value="算法题：&#10;给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。&#10;初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。你可以假设 nums1 的空间大小等于 m + n，这样它就有足够的空间保存来自 nums2 的元素。&#10;输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3&#10;输出：[1,2,2,3,5,6]&#10;示例 2：&#10;输入：nums1 = [1], m = 1, nums2 = [], n = 0&#10;输出：[1]" />
     <MESSAGE value="算法题：&#10;一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：&#10;'A' -&gt; 1&#10;'B' -&gt; 2&#10;...&#10;'Z' -&gt; 26&#10;要 解码 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，&quot;111&quot; 可以将 &quot;1&quot; 中的每个 &quot;1&quot; 映射为 &quot;A&quot; ，从而得到 &quot;AAA&quot; ，或者可以将 &quot;11&quot; 和 &quot;1&quot;（分别为 &quot;K&quot; 和 &quot;A&quot; ）映射为 &quot;KA&quot; 。注意，&quot;06&quot; 不能映射为 &quot;F&quot; ，因为 &quot;6&quot; 和 &quot;06&quot; 不同。&#10;给你一个只含数字的 非空 字符串 num ，请计算并返回 解码 方法的 总数 。&#10;题目数据保证答案肯定是一个 32 位 的整数。&#10;示例 1：&#10;输入：s = &quot;12&quot;&#10;输出：2&#10;解释：它可以解码为 &quot;AB&quot;（1 2）或者 &quot;L&quot;（12）。&#10;示例 2：&#10;输入：s = &quot;226&quot;&#10;输出：3&#10;解释：它可以解码为 &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), 或者 &quot;BBF&quot; (2 2 6) 。&#10;示例 3：&#10;输入：s = &quot;0&quot;&#10;输出：0&#10;解释：没有字符映射到以 0 开头的数字。含有 0 的有效映射是 'J' -&gt; &quot;10&quot; 和 'T'-&gt; &quot;20&quot; 。由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。&#10;示例 4：&#10;输入：s = &quot;06&quot;&#10;输出：0&#10;解释：&quot;06&quot; 不能映射到 &quot;F&quot; ，因为字符串开头的 0 无法指向一个有效的字符。 " />
     <MESSAGE value="算法题：&#10;给你单链表的头指针 head 和两个整数 left 和 right ，其中 left &lt;= right 。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。&#10;示例 1：&#10;输入：head = [1,2,3,4,5], left = 2, right = 4&#10;输出：[1,4,3,2,5]&#10;示例 2：&#10;输入：head = [5], left = 1, right = 1&#10;输出：[5]" />
@@ -593,7 +599,8 @@
     <MESSAGE value="给定一个二叉树，找出其最小深度。&#10;最小深度是从根节点到最近叶子节点的最短路径上的节点数量。&#10;说明：叶子节点是指没有子节点的节点。" />
     <MESSAGE value="给你二叉树的根节点root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。&#10;叶子节点 是指没有子节点的节点。" />
     <MESSAGE value="给你二叉树的根结点 root ，请你将它展开为一个单链表：&#10;展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。&#10;展开后的单链表应该与二叉树 先序遍历 顺序相同。" />
-    <option name="LAST_COMMIT_MESSAGE" value="给你二叉树的根结点 root ，请你将它展开为一个单链表：&#10;展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。&#10;展开后的单链表应该与二叉树 先序遍历 顺序相同。" />
+    <MESSAGE value="给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。" />
+    <option name="LAST_COMMIT_MESSAGE" value="给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
