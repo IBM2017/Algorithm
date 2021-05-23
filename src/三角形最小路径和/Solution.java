@@ -1,6 +1,5 @@
 package 三角形最小路径和;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
@@ -21,5 +20,4 @@ public class Solution {
         }
         return minTotal;
     }
-
 }
