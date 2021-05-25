@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个三角形 triangle ，找出自顶向下的最小路径和。&#10;每一步只能移动到下一行中相邻的结点上。相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于 上一层结点下标 + 1 的两个结点。也就是说，如果正位于当前行的下标 i ，那么下一步可以移动到下一行的下标 i 或 i + 1 。&#10;示例 1：&#10;输入：triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]&#10;输出：11&#10;解释：如下面简图所示：&#10;   2&#10;  3 4&#10; 6 5 7&#10;4 1 8 3&#10;自顶向下的最小路径和为11（即，2+3+5+1= 11）。&#10;示例 2：&#10;输入：triangle = [[-10]]&#10;输出：-10">
+      <change afterPath="$PROJECT_DIR$/src/买卖股票的最佳时机2/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,15 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -284,6 +283,7 @@
       <workItem from="1621159177480" duration="1120000" />
       <workItem from="1621681718969" duration="7421000" />
       <workItem from="1621765991395" duration="6825000" />
+      <workItem from="1621953997894" duration="2326000" />
     </task>
     <task id="LOCAL-00001" summary="第一次全部提交">
       <created>1616249194224</created>
