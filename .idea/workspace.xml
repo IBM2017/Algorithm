@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。&#10;说明：&#10;你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？&#10;示例 1:&#10;输入: [2,2,1]&#10;输出: 1&#10;示例2:&#10;输入: [4,1,2,1,2]&#10;输出: 4">
-      <change afterPath="$PROJECT_DIR$/src/只出现一次的数字2/Solution.java" afterDir="false" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你一个整数数组nums ，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次 。请你找出并返回那个只出现了一次的元素。&#10;示例 1：&#10;输入：nums = [2,2,3,2]&#10;输出：3&#10;示例 2：&#10;输入：nums = [0,1,0,1,0,1,99]&#10;输出：99">
+      <change afterPath="$PROJECT_DIR$/src/复制带随机指针的链表/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/复制带随机指针的链表/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -146,13 +147,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -292,14 +295,8 @@
       <workItem from="1622723555770" duration="1641000" />
       <workItem from="1622821513655" duration="602000" />
       <workItem from="1622867268953" duration="2161000" />
-      <workItem from="1623064229950" duration="992000" />
-    </task>
-    <task id="LOCAL-00001" summary="第一次全部提交">
-      <created>1616249194224</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1616249194224</updated>
+      <workItem from="1623064229950" duration="1159000" />
+      <workItem from="1623065429110" duration="2186000" />
     </task>
     <task id="LOCAL-00002" summary="第一次全部提交">
       <created>1616249518143</created>
@@ -637,7 +634,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622870827052</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="给你一个整数数组nums ，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次 。请你找出并返回那个只出现了一次的元素。&#10;示例 1：&#10;输入：nums = [2,2,3,2]&#10;输出：3&#10;示例 2：&#10;输入：nums = [0,1,0,1,0,1,99]&#10;输出：99">
+      <created>1623065264132</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1623065264132</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -681,7 +685,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给定一个二叉树，返回其节点值的锯齿形层序遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。&#10;例如：&#10;给定二叉树 [3,9,20,null,null,15,7],&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回锯齿形层序遍历如下：&#10;[&#10;  [3],&#10;  [20,9],&#10;  [15,7]&#10;]" />
     <MESSAGE value="给定一个二叉树，找出其最大深度。&#10;二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。&#10;说明: 叶子节点是指没有子节点的节点。&#10;示例：&#10;给定二叉树 [3,9,20,null,null,15,7]，&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回它的最大深度 3 。" />
     <MESSAGE value="根据一棵树的前序遍历与中序遍历构造二叉树。&#10;注意:&#10;你可以假设树中没有重复的元素。&#10;例如，给出&#10;前序遍历 preorder = [3,9,20,15,7]&#10;中序遍历 inorder = [9,3,15,20,7]&#10;返回如下的二叉树：&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7" />
     <MESSAGE value="根据一棵树的中序遍历与后序遍历构造二叉树。&#10;注意:&#10;你可以假设树中没有重复的元素。&#10;例如，给出&#10;中序遍历 inorder = [9,3,15,20,7]&#10;后序遍历 postorder = [9,15,7,20,3]&#10;返回如下的二叉树：&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7" />
@@ -706,7 +709,8 @@
     <MESSAGE value="在一条环路上有N个加油站，其中第i个加油站有汽油gas[i]升。&#10;你有一辆油箱容量无限的的汽车，从第 i 个加油站开往第 i+1个加油站需要消耗汽油cost[i]升。你从其中的一个加油站出发，开始时油箱为空。&#10;如果你可以绕环路行驶一周，则返回出发时加油站的编号，否则返回 -1。&#10;说明:&#10;如果题目有解，该答案即为唯一答案。&#10;输入数组均为非空数组，且长度相同。&#10;输入数组中的元素均为非负数。&#10;示例1:&#10;输入: &#10;gas  = [1,2,3,4,5]&#10;cost = [3,4,5,1,2]&#10;输出: 3&#10;解释:&#10;从 3 号加油站(索引为 3 处)出发，可获得 4 升汽油。此时油箱有 = 0 + 4 = 4 升汽油&#10;开往 4 号加油站，此时油箱有 4 - 1 + 5 = 8 升汽油&#10;开往 0 号加油站，此时油箱有 8 - 2 + 1 = 7 升汽油&#10;开往 1 号加油站，此时油箱有 7 - 3 + 2 = 6 升汽油&#10;开往 2 号加油站，此时油箱有 6 - 4 + 3 = 5 升汽油&#10;开往 3 号加油站，你需要消耗 5 升汽油，正好足够你返回到 3 号加油站。&#10;因此，3 可为起始索引。&#10;示例 2:&#10;输入: &#10;gas  = [2,3,4]&#10;cost = [3,4,3]&#10;输出: -1&#10;解释:&#10;你不能从 0 号或 1 号加油站出发，因为没有足够的汽油可以让你行驶到下一个加油站。&#10;我们从 2 号加油站出发，可以获得 4 升汽油。 此时油箱有 = 0 + 4 = 4 升汽油&#10;开往 0 号加油站，此时油箱有 4 - 3 + 2 = 3 升汽油&#10;开往 1 号加油站，此时油箱有 3 - 3 + 3 = 3 升汽油&#10;你无法返回 2 号加油站，因为返程需要消耗 4 升汽油，但是你的油箱只有 3 升汽油。&#10;因此，无论怎样，你都不可能绕环路行驶一周。" />
     <MESSAGE value="老师想给孩子们分发糖果，有 N个孩子站成了一条直线，老师会根据每个孩子的表现，预先给他们评分。&#10;你需要按照以下要求，帮助老师给这些孩子分发糖果：&#10;每个孩子至少分配到 1 个糖果。&#10;评分更高的孩子必须比他两侧的邻位孩子获得更多的糖果。&#10;那么这样下来，老师至少需要准备多少颗糖果呢？&#10;示例1：&#10;输入：[1,0,2]&#10;输出：5&#10;解释：你可以分别给这三个孩子分发 2、1、2 颗糖果。&#10;示例2：&#10;输入：[1,2,2]&#10;输出：4&#10;解释：你可以分别给这三个孩子分发 1、2、1 颗糖果。&#10;     第三个孩子只得到 1 颗糖果，这已满足上述两个条件。" />
     <MESSAGE value="给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。&#10;说明：&#10;你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？&#10;示例 1:&#10;输入: [2,2,1]&#10;输出: 1&#10;示例2:&#10;输入: [4,1,2,1,2]&#10;输出: 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。&#10;说明：&#10;你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？&#10;示例 1:&#10;输入: [2,2,1]&#10;输出: 1&#10;示例2:&#10;输入: [4,1,2,1,2]&#10;输出: 4" />
+    <MESSAGE value="给你一个整数数组nums ，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次 。请你找出并返回那个只出现了一次的元素。&#10;示例 1：&#10;输入：nums = [2,2,3,2]&#10;输出：3&#10;示例 2：&#10;输入：nums = [0,1,0,1,0,1,99]&#10;输出：99" />
+    <option name="LAST_COMMIT_MESSAGE" value="给你一个整数数组nums ，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次 。请你找出并返回那个只出现了一次的元素。&#10;示例 1：&#10;输入：nums = [2,2,3,2]&#10;输出：3&#10;示例 2：&#10;输入：nums = [0,1,0,1,0,1,99]&#10;输出：99" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
