@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个单链表L：L0→L1→…→Ln-1→Ln ，&#10;将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…&#10;&#10;你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。&#10;&#10;示例1:&#10;给定链表 1-&gt;2-&gt;3-&gt;4, 重新排列为 1-&gt;4-&gt;2-&gt;3.&#10;示例 2:&#10;给定链表 1-&gt;2-&gt;3-&gt;4-&gt;5, 重新排列为 1-&gt;5-&gt;2-&gt;4-&gt;3." />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你二叉树的根节点 root ，返回它节点值的 前序 遍历。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -294,14 +294,7 @@
       <workItem from="1623064229950" duration="1159000" />
       <workItem from="1623065429110" duration="2186000" />
       <workItem from="1623152733537" duration="1256000" />
-      <workItem from="1623238588181" duration="347000" />
-    </task>
-    <task id="LOCAL-00006" summary="算法题：&#10;给定一个增序排列数组 nums ，你需要在 原地 删除重复出现的元素，使得每个元素最多出现两次，返回移除后数组的新长度。&#10;不要使用额外的数组空间，你必须在 原地 修改输入数组 并在使用 O(1) 额外空间的条件下完成。&#10;输入：nums = [1,1,1,2,2,3]&#10;输出：5, nums = [1,1,2,2,3]&#10;解释：函数应返回新长度 length = 5, 并且原数组的前五个元素被修改为 1, 1, 2, 2, 3 。 你不需要考虑数组中超出新长度后面的元素。">
-      <created>1616422265875</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1616422265875</updated>
+      <workItem from="1623238588181" duration="650000" />
     </task>
     <task id="LOCAL-00007" summary="算法题：&#10;假设按照升序排序的数组在预先未知的某个点上进行了旋转。&#10;( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。&#10;编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。&#10;&#10;示例 1:&#10;输入: nums = [2,5,6,0,0,1,2], target = 0&#10;输出: true&#10;示例 2:&#10;输入: nums = [2,5,6,0,0,1,2], target = 3&#10;输出: false">
       <created>1616513464937</created>
@@ -639,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623238855179</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="给你二叉树的根节点 root ，返回它节点值的 前序 遍历。">
+      <created>1623239167997</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1623239167997</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,7 +683,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给你一个整数数组 nums ，其中元素已经按 升序 排列，请你将其转换为一棵 高度平衡 二叉搜索树。&#10;高度平衡 二叉树是一棵满足「每个节点的左右两个子树的高度差的绝对值不超过 1 」的二叉树。" />
     <MESSAGE value="给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。&#10;本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。&#10;示例:&#10;给定的有序链表： [-10, -3, 0, 5, 9],&#10;一个可能的答案是：[0, -3, 9, -10, null, 5], 它可以表示下面这个高度平衡二叉搜索树：&#10;      0&#10;     / \&#10;   -3   9&#10;   /   /&#10; -10  5" />
     <MESSAGE value="给定一个二叉树，判断它是否是高度平衡的二叉树。&#10;本题中，一棵高度平衡二叉树定义为：&#10;一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。" />
     <MESSAGE value="给定一个二叉树，找出其最小深度。&#10;最小深度是从根节点到最近叶子节点的最短路径上的节点数量。&#10;说明：叶子节点是指没有子节点的节点。" />
@@ -708,7 +707,8 @@
     <MESSAGE value="给定一个链表，判断链表中是否有环。&#10;&#10;如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。&#10;&#10;如果链表中存在环，则返回 true 。 否则，返回 false 。&#10;&#10;进阶：&#10;你能用 O(1)（即，常量）内存解决此问题吗？" />
     <MESSAGE value="给定一个链表，返回链表开始入环的第一个节点。如果链表无环，则返回null。&#10;&#10;为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意，pos 仅仅是用于标识环的情况，并不会作为参数传递到函数中。&#10;说明：不允许修改给定的链表。&#10;&#10;进阶：&#10;你是否可以使用 O(1) 空间解决此题？" />
     <MESSAGE value="给定一个单链表L：L0→L1→…→Ln-1→Ln ，&#10;将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…&#10;&#10;你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。&#10;&#10;示例1:&#10;给定链表 1-&gt;2-&gt;3-&gt;4, 重新排列为 1-&gt;4-&gt;2-&gt;3.&#10;示例 2:&#10;给定链表 1-&gt;2-&gt;3-&gt;4-&gt;5, 重新排列为 1-&gt;5-&gt;2-&gt;4-&gt;3." />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个单链表L：L0→L1→…→Ln-1→Ln ，&#10;将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…&#10;&#10;你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。&#10;&#10;示例1:&#10;给定链表 1-&gt;2-&gt;3-&gt;4, 重新排列为 1-&gt;4-&gt;2-&gt;3.&#10;示例 2:&#10;给定链表 1-&gt;2-&gt;3-&gt;4-&gt;5, 重新排列为 1-&gt;5-&gt;2-&gt;4-&gt;3." />
+    <MESSAGE value="给你二叉树的根节点 root ，返回它节点值的 前序 遍历。" />
+    <option name="LAST_COMMIT_MESSAGE" value="给你二叉树的根节点 root ，返回它节点值的 前序 遍历。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
