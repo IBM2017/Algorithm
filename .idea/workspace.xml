@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你二叉树的根节点 root ，返回它节点值的 前序 遍历。" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你二叉树的根节点root ，返回它节点值的后序遍历。">
+      <change afterPath="$PROJECT_DIR$/src/LRU缓存机制/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,11 +73,11 @@
       <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="二叉树的后序遍历" />
+      <recent name="二叉树的前序遍历" />
       <recent name="环形链表2" />
       <recent name="求根节点到叶节点数字之和" />
       <recent name="填充每个节点的下一个右侧节点指针2" />
-      <recent name="填充每个节点的下一个右侧节点指针" />
-      <recent name="二叉树展开为链表" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -139,19 +142,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -294,14 +284,8 @@
       <workItem from="1623064229950" duration="1159000" />
       <workItem from="1623065429110" duration="2186000" />
       <workItem from="1623152733537" duration="1256000" />
-      <workItem from="1623238588181" duration="650000" />
-    </task>
-    <task id="LOCAL-00007" summary="算法题：&#10;假设按照升序排序的数组在预先未知的某个点上进行了旋转。&#10;( 例如，数组 [0,0,1,2,2,5,6] 可能变为 [2,5,6,0,0,1,2] )。&#10;编写一个函数来判断给定的目标值是否存在于数组中。若存在返回 true，否则返回 false。&#10;&#10;示例 1:&#10;输入: nums = [2,5,6,0,0,1,2], target = 0&#10;输出: true&#10;示例 2:&#10;输入: nums = [2,5,6,0,0,1,2], target = 3&#10;输出: false">
-      <created>1616513464937</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1616513464937</updated>
+      <workItem from="1623238588181" duration="3154000" />
+      <workItem from="1623501458772" duration="1835000" />
     </task>
     <task id="LOCAL-00008" summary="算法题：&#10;存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除链表中所有存在数字重复情况的节点，只保留原始链表中 没有重复出现 的数字。&#10;返回同样按升序排列的结果链表。&#10;输入：head = [1,2,3,3,4,4,5]&#10;输出：[1,2,5]&#10;输入：head = [1,1,1,2,3]&#10;输出：[2,3]">
       <created>1617030439299</created>
@@ -639,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623239167997</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="给你二叉树的根节点root ，返回它节点值的后序遍历。">
+      <created>1623239352475</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1623239352475</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,7 +674,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给定一个单链表，其中的元素按升序排序，将其转换为高度平衡的二叉搜索树。&#10;本题中，一个高度平衡二叉树是指一个二叉树每个节点的左右两个子树的高度差的绝对值不超过 1。&#10;示例:&#10;给定的有序链表： [-10, -3, 0, 5, 9],&#10;一个可能的答案是：[0, -3, 9, -10, null, 5], 它可以表示下面这个高度平衡二叉搜索树：&#10;      0&#10;     / \&#10;   -3   9&#10;   /   /&#10; -10  5" />
     <MESSAGE value="给定一个二叉树，判断它是否是高度平衡的二叉树。&#10;本题中，一棵高度平衡二叉树定义为：&#10;一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过 1 。" />
     <MESSAGE value="给定一个二叉树，找出其最小深度。&#10;最小深度是从根节点到最近叶子节点的最短路径上的节点数量。&#10;说明：叶子节点是指没有子节点的节点。" />
     <MESSAGE value="给你二叉树的根节点root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。&#10;叶子节点 是指没有子节点的节点。" />
@@ -708,7 +698,8 @@
     <MESSAGE value="给定一个链表，返回链表开始入环的第一个节点。如果链表无环，则返回null。&#10;&#10;为了表示给定链表中的环，我们使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。 如果 pos 是 -1，则在该链表中没有环。注意，pos 仅仅是用于标识环的情况，并不会作为参数传递到函数中。&#10;说明：不允许修改给定的链表。&#10;&#10;进阶：&#10;你是否可以使用 O(1) 空间解决此题？" />
     <MESSAGE value="给定一个单链表L：L0→L1→…→Ln-1→Ln ，&#10;将其重新排列后变为： L0→Ln→L1→Ln-1→L2→Ln-2→…&#10;&#10;你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。&#10;&#10;示例1:&#10;给定链表 1-&gt;2-&gt;3-&gt;4, 重新排列为 1-&gt;4-&gt;2-&gt;3.&#10;示例 2:&#10;给定链表 1-&gt;2-&gt;3-&gt;4-&gt;5, 重新排列为 1-&gt;5-&gt;2-&gt;4-&gt;3." />
     <MESSAGE value="给你二叉树的根节点 root ，返回它节点值的 前序 遍历。" />
-    <option name="LAST_COMMIT_MESSAGE" value="给你二叉树的根节点 root ，返回它节点值的 前序 遍历。" />
+    <MESSAGE value="给你二叉树的根节点root ，返回它节点值的后序遍历。" />
+    <option name="LAST_COMMIT_MESSAGE" value="给你二叉树的根节点root ，返回它节点值的后序遍历。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
