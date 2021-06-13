@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="对链表进行插入排序。&#10;插入排序的动画演示如上。从第一个元素开始，该链表可以被认为已经部分排序（用黑色表示）。&#10;每次迭代时，从输入数据中移除一个元素（用红色表示），并原地将其插入到已排好序的链表中。&#10;插入排序算法：&#10;插入排序是迭代的，每次只移动一个元素，直到所有元素可以形成一个有序的输出列表。&#10;每次迭代中，插入排序只从输入数据中移除一个待排序的元素，找到它在序列中适当的位置，并将其插入。&#10;重复直到所有输入数据插入完为止。&#10;示例1：&#10;输入: 4-&gt;2-&gt;1-&gt;3&#10;输出: 1-&gt;2-&gt;3-&gt;4&#10;示例2：&#10;输入: -1-&gt;5-&gt;3-&gt;4-&gt;0&#10;输出: -1-&gt;0-&gt;3-&gt;4-&gt;5">
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你链表的头结点head，请将其按 升序 排列并返回 排序后的链表 。&#10;&#10;进阶：&#10;你可以在O(nlogn) 时间复杂度和常数级空间复杂度下，对链表进行排序吗？">
+      <change afterPath="$PROJECT_DIR$/src/逆波兰表达式求值/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,11 +73,11 @@
       <recent name="F:\力扣算法\src\对称二叉树" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="排序链表" />
       <recent name="二叉树的后序遍历" />
       <recent name="二叉树的前序遍历" />
       <recent name="环形链表2" />
       <recent name="求根节点到叶节点数字之和" />
-      <recent name="填充每个节点的下一个右侧节点指针2" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Solution (4)">
@@ -297,13 +298,7 @@
       <workItem from="1623238588181" duration="3154000" />
       <workItem from="1623501458772" duration="4298000" />
       <workItem from="1623558392091" duration="602000" />
-    </task>
-    <task id="LOCAL-00010" summary="算法题：&#10;给你一个链表的头节点 head 和一个特定值 x ，请你对链表进行分隔，使得所有 小于 x 的节点都出现在 大于或等于 x 的节点之前。&#10;你应当 保留 两个分区中每个节点的初始相对位置。&#10;输入：head = [1,4,3,2,5,2], x = 3&#10;输出：[1,2,2,4,3,5]&#10;输入：head = [2,1], x = 2&#10;输出：[1,2]">
-      <created>1617887473446</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1617887473446</updated>
+      <workItem from="1623590183235" duration="2956000" />
     </task>
     <task id="LOCAL-00011" summary="算法题：&#10;给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。&#10;初始化 nums1 和 nums2 的元素数量分别为 m 和 n 。你可以假设 nums1 的空间大小等于 m + n，这样它就有足够的空间保存来自 nums2 的元素。&#10;输入：nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3&#10;输出：[1,2,2,3,5,6]&#10;示例 2：&#10;输入：nums1 = [1], m = 1, nums2 = [], n = 0&#10;输出：[1]">
       <created>1617891037795</created>
@@ -641,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623505156273</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="给你链表的头结点head，请将其按 升序 排列并返回 排序后的链表 。&#10;&#10;进阶：&#10;你可以在O(nlogn) 时间复杂度和常数级空间复杂度下，对链表进行排序吗？">
+      <created>1623590366160</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1623590366160</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -685,7 +687,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给你二叉树的根节点root 和一个表示目标和的整数 targetSum ，判断该树中是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和targetSum 。&#10;叶子节点 是指没有子节点的节点。" />
     <MESSAGE value="给你二叉树的根结点 root ，请你将它展开为一个单链表：&#10;展开后的单链表应该同样使用 TreeNode ，其中 right 子指针指向链表中下一个结点，而左子指针始终为 null 。&#10;展开后的单链表应该与二叉树 先序遍历 顺序相同。" />
     <MESSAGE value="给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。" />
     <MESSAGE value="给定一个二叉树&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。" />
@@ -710,7 +711,8 @@
     <MESSAGE value="给你二叉树的根节点root ，返回它节点值的后序遍历。" />
     <MESSAGE value="运用你所掌握的数据结构，设计和实现一个LRU (最近最少使用) 缓存机制 。&#10;实现 LRUCache 类：&#10;&#10;LRUCache(int capacity) 以正整数作为容量capacity 初始化 LRU 缓存&#10;int get(int key) 如果关键字 key 存在于缓存中，则返回关键字的值，否则返回 -1 。&#10;void put(int key, int value)如果关键字已经存在，则变更其数据值；如果关键字不存在，则插入该组「关键字-值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。&#10;&#10;进阶：你是否可以在O(1) 时间复杂度内完成这两种操作？&#10;&#10; &#10;&#10;示例：&#10;&#10;输入&#10;[&quot;LRUCache&quot;, &quot;put&quot;, &quot;put&quot;, &quot;get&quot;, &quot;put&quot;, &quot;get&quot;, &quot;put&quot;, &quot;get&quot;, &quot;get&quot;, &quot;get&quot;]&#10;[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]&#10;输出&#10;[null, null, null, 1, null, -1, null, -1, 3, 4]&#10;&#10;解释&#10;LRUCache lRUCache = new LRUCache(2);&#10;lRUCache.put(1, 1); // 缓存是 {1=1}&#10;lRUCache.put(2, 2); // 缓存是 {1=1, 2=2}&#10;lRUCache.get(1);    // 返回 1&#10;lRUCache.put(3, 3); // 该操作会使得关键字 2 作废，缓存是 {1=1, 3=3}&#10;lRUCache.get(2);    // 返回 -1 (未找到)&#10;lRUCache.put(4, 4); // 该操作会使得关键字 1 作废，缓存是 {4=4, 3=3}&#10;lRUCache.get(1);    // 返回 -1 (未找到)&#10;lRUCache.get(3);    // 返回 3&#10;lRUCache.get(4);    // 返回 4" />
     <MESSAGE value="对链表进行插入排序。&#10;插入排序的动画演示如上。从第一个元素开始，该链表可以被认为已经部分排序（用黑色表示）。&#10;每次迭代时，从输入数据中移除一个元素（用红色表示），并原地将其插入到已排好序的链表中。&#10;插入排序算法：&#10;插入排序是迭代的，每次只移动一个元素，直到所有元素可以形成一个有序的输出列表。&#10;每次迭代中，插入排序只从输入数据中移除一个待排序的元素，找到它在序列中适当的位置，并将其插入。&#10;重复直到所有输入数据插入完为止。&#10;示例1：&#10;输入: 4-&gt;2-&gt;1-&gt;3&#10;输出: 1-&gt;2-&gt;3-&gt;4&#10;示例2：&#10;输入: -1-&gt;5-&gt;3-&gt;4-&gt;0&#10;输出: -1-&gt;0-&gt;3-&gt;4-&gt;5" />
-    <option name="LAST_COMMIT_MESSAGE" value="对链表进行插入排序。&#10;插入排序的动画演示如上。从第一个元素开始，该链表可以被认为已经部分排序（用黑色表示）。&#10;每次迭代时，从输入数据中移除一个元素（用红色表示），并原地将其插入到已排好序的链表中。&#10;插入排序算法：&#10;插入排序是迭代的，每次只移动一个元素，直到所有元素可以形成一个有序的输出列表。&#10;每次迭代中，插入排序只从输入数据中移除一个待排序的元素，找到它在序列中适当的位置，并将其插入。&#10;重复直到所有输入数据插入完为止。&#10;示例1：&#10;输入: 4-&gt;2-&gt;1-&gt;3&#10;输出: 1-&gt;2-&gt;3-&gt;4&#10;示例2：&#10;输入: -1-&gt;5-&gt;3-&gt;4-&gt;0&#10;输出: -1-&gt;0-&gt;3-&gt;4-&gt;5" />
+    <MESSAGE value="给你链表的头结点head，请将其按 升序 排列并返回 排序后的链表 。&#10;&#10;进阶：&#10;你可以在O(nlogn) 时间复杂度和常数级空间复杂度下，对链表进行排序吗？" />
+    <option name="LAST_COMMIT_MESSAGE" value="给你链表的头结点head，请将其按 升序 排列并返回 排序后的链表 。&#10;&#10;进阶：&#10;你可以在O(nlogn) 时间复杂度和常数级空间复杂度下，对链表进行排序吗？" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
