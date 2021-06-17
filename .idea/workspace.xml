@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。&#10;push(x) —— 将元素 x 推入栈中。&#10;pop()—— 删除栈顶的元素。&#10;top()—— 获取栈顶元素。&#10;getMin() —— 检索栈中的最小元素。&#10;&#10;示例:&#10;&#10;输入：&#10;[&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]&#10;[[],[-2],[0],[-3],[],[],[],[]]&#10;&#10;输出：&#10;[null,null,null,null,-3,null,0,-2]&#10;&#10;解释：&#10;MinStack minStack = new MinStack();&#10;minStack.push(-2);&#10;minStack.push(0);&#10;minStack.push(-3);&#10;minStack.getMin();   --&gt; 返回 -3.&#10;minStack.pop();&#10;minStack.top();      --&gt; 返回 0.&#10;minStack.getMin();   --&gt; 返回 -2.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -301,14 +299,7 @@
       <workItem from="1623641392379" duration="601000" />
       <workItem from="1623674214558" duration="1430000" />
       <workItem from="1623766006458" duration="1818000" />
-      <workItem from="1623939658980" duration="1599000" />
-    </task>
-    <task id="LOCAL-00013" summary="算法题：&#10;给你单链表的头指针 head 和两个整数 left 和 right ，其中 left &lt;= right 。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。&#10;示例 1：&#10;输入：head = [1,2,3,4,5], left = 2, right = 4&#10;输出：[1,4,3,2,5]&#10;示例 2：&#10;输入：head = [5], left = 1, right = 1&#10;输出：[5]">
-      <created>1618150200509</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1618150200509</updated>
+      <workItem from="1623939658980" duration="2463000" />
     </task>
     <task id="LOCAL-00014" summary="算法题：&#10;给定一个只包含数字的字符串，用以表示一个 IP 地址，返回所有可能从 s 获得的 有效 IP 地址 。你可以按任何顺序返回答案。&#10;有效 IP 地址 正好由四个整数（每个整数位于 0 到 255 之间组成，且不能含有前导 0），整数之间用 '.' 分隔。&#10;例如：&quot;0.1.2.201&quot; 和 &quot;192.168.1.1&quot; 是 有效 IP 地址，但是 &quot;0.011.255.245&quot;、&quot;192.168.1.312&quot; 和 &quot;192.168@1.1&quot; 是 无效 IP 地址。&#10;示例 1：&#10;输入：s = &quot;25525511135&quot;&#10;输出：[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]&#10;示例 2：&#10;输入：s = &quot;0000&quot;&#10;输出：[&quot;0.0.0.0&quot;]">
       <created>1618239069276</created>
@@ -646,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623940606068</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。">
+      <created>1623941650139</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1623941650139</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -690,7 +688,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给定一个二叉树&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。" />
     <MESSAGE value="给定一个非负整数numRows，生成杨辉三角的前numRows行。&#10;在杨辉三角中，每个数是它左上方和右上方的数的和。&#10;示例:&#10;输入: 5&#10;输出:&#10;[&#10;     [1],&#10;    [1,1],&#10;   [1,2,1],&#10;  [1,3,3,1],&#10; [1,4,6,4,1]&#10;]" />
     <MESSAGE value="给定一个非负索引k，其中 k≤33，返回杨辉三角的第 k 行。&#10;在杨辉三角中，每个数是它左上方和右上方的数的和。&#10;示例:&#10;输入: 3&#10;输出: [1,3,3,1]&#10;进阶：&#10;你可以优化你的算法到 O(k) 空间复杂度吗？" />
     <MESSAGE value="给定一个三角形 triangle ，找出自顶向下的最小路径和。&#10;每一步只能移动到下一行中相邻的结点上。相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于 上一层结点下标 + 1 的两个结点。也就是说，如果正位于当前行的下标 i ，那么下一步可以移动到下一行的下标 i 或 i + 1 。&#10;示例 1：&#10;输入：triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]&#10;输出：11&#10;解释：如下面简图所示：&#10;   2&#10;  3 4&#10; 6 5 7&#10;4 1 8 3&#10;自顶向下的最小路径和为11（即，2+3+5+1= 11）。&#10;示例 2：&#10;输入：triangle = [[-10]]&#10;输出：-10" />
@@ -715,7 +712,8 @@
     <MESSAGE value="给你链表的头结点head，请将其按 升序 排列并返回 排序后的链表 。&#10;&#10;进阶：&#10;你可以在O(nlogn) 时间复杂度和常数级空间复杂度下，对链表进行排序吗？" />
     <MESSAGE value="根据 逆波兰表示法，求表达式的值。&#10;有效的算符包括+、-、*、/。每个运算对象可以是整数，也可以是另一个逆波兰表达式。&#10;说明：&#10;整数除法只保留整数部分。&#10;给定逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。&#10;示例1：&#10;输入：tokens = [&quot;2&quot;,&quot;1&quot;,&quot;+&quot;,&quot;3&quot;,&quot;*&quot;]&#10;输出：9&#10;解释：该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9&#10;示例2：&#10;输入：tokens = [&quot;4&quot;,&quot;13&quot;,&quot;5&quot;,&quot;/&quot;,&quot;+&quot;]&#10;输出：6&#10;解释：该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6&#10;示例3：&#10;输入：tokens = [&quot;10&quot;,&quot;6&quot;,&quot;9&quot;,&quot;3&quot;,&quot;+&quot;,&quot;-11&quot;,&quot;*&quot;,&quot;/&quot;,&quot;*&quot;,&quot;17&quot;,&quot;+&quot;,&quot;5&quot;,&quot;+&quot;]&#10;输出：22&#10;解释：&#10;该算式转化为常见的中缀算术表达式为：&#10;  ((10 * (6 / ((9 + 3) * -11))) + 17) + 5&#10;= ((10 * (6 / (12 * -11))) + 17) + 5&#10;= ((10 * (6 / -132)) + 17) + 5&#10;= ((10 * 0) + 17) + 5&#10;= (0 + 17) + 5&#10;= 17 + 5&#10;= 22" />
     <MESSAGE value="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。&#10;push(x) —— 将元素 x 推入栈中。&#10;pop()—— 删除栈顶的元素。&#10;top()—— 获取栈顶元素。&#10;getMin() —— 检索栈中的最小元素。&#10;&#10;示例:&#10;&#10;输入：&#10;[&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]&#10;[[],[-2],[0],[-3],[],[],[],[]]&#10;&#10;输出：&#10;[null,null,null,null,-3,null,0,-2]&#10;&#10;解释：&#10;MinStack minStack = new MinStack();&#10;minStack.push(-2);&#10;minStack.push(0);&#10;minStack.push(-3);&#10;minStack.getMin();   --&gt; 返回 -3.&#10;minStack.pop();&#10;minStack.top();      --&gt; 返回 0.&#10;minStack.getMin();   --&gt; 返回 -2." />
-    <option name="LAST_COMMIT_MESSAGE" value="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。&#10;push(x) —— 将元素 x 推入栈中。&#10;pop()—— 删除栈顶的元素。&#10;top()—— 获取栈顶元素。&#10;getMin() —— 检索栈中的最小元素。&#10;&#10;示例:&#10;&#10;输入：&#10;[&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]&#10;[[],[-2],[0],[-3],[],[],[],[]]&#10;&#10;输出：&#10;[null,null,null,null,-3,null,0,-2]&#10;&#10;解释：&#10;MinStack minStack = new MinStack();&#10;minStack.push(-2);&#10;minStack.push(0);&#10;minStack.push(-3);&#10;minStack.getMin();   --&gt; 返回 -3.&#10;minStack.pop();&#10;minStack.top();      --&gt; 返回 0.&#10;minStack.getMin();   --&gt; 返回 -2." />
+    <MESSAGE value="给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。" />
+    <option name="LAST_COMMIT_MESSAGE" value="给你两个单链表的头节点 headA 和 headB ，请你找出并返回两个单链表相交的起始节点。如果两个链表没有交点，返回 null 。" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
