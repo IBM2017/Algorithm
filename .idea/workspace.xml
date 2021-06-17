@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="根据 逆波兰表示法，求表达式的值。&#10;有效的算符包括+、-、*、/。每个运算对象可以是整数，也可以是另一个逆波兰表达式。&#10;说明：&#10;整数除法只保留整数部分。&#10;给定逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。&#10;示例1：&#10;输入：tokens = [&quot;2&quot;,&quot;1&quot;,&quot;+&quot;,&quot;3&quot;,&quot;*&quot;]&#10;输出：9&#10;解释：该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9&#10;示例2：&#10;输入：tokens = [&quot;4&quot;,&quot;13&quot;,&quot;5&quot;,&quot;/&quot;,&quot;+&quot;]&#10;输出：6&#10;解释：该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6&#10;示例3：&#10;输入：tokens = [&quot;10&quot;,&quot;6&quot;,&quot;9&quot;,&quot;3&quot;,&quot;+&quot;,&quot;-11&quot;,&quot;*&quot;,&quot;/&quot;,&quot;*&quot;,&quot;17&quot;,&quot;+&quot;,&quot;5&quot;,&quot;+&quot;]&#10;输出：22&#10;解释：&#10;该算式转化为常见的中缀算术表达式为：&#10;  ((10 * (6 / ((9 + 3) * -11))) + 17) + 5&#10;= ((10 * (6 / (12 * -11))) + 17) + 5&#10;= ((10 * (6 / -132)) + 17) + 5&#10;= ((10 * 0) + 17) + 5&#10;= (0 + 17) + 5&#10;= 17 + 5&#10;= 22" />
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。&#10;push(x) —— 将元素 x 推入栈中。&#10;pop()—— 删除栈顶的元素。&#10;top()—— 获取栈顶元素。&#10;getMin() —— 检索栈中的最小元素。&#10;&#10;示例:&#10;&#10;输入：&#10;[&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]&#10;[[],[-2],[0],[-3],[],[],[],[]]&#10;&#10;输出：&#10;[null,null,null,null,-3,null,0,-2]&#10;&#10;解释：&#10;MinStack minStack = new MinStack();&#10;minStack.push(-2);&#10;minStack.push(0);&#10;minStack.push(-3);&#10;minStack.getMin();   --&gt; 返回 -3.&#10;minStack.pop();&#10;minStack.top();      --&gt; 返回 0.&#10;minStack.getMin();   --&gt; 返回 -2.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,14 +301,7 @@
       <workItem from="1623641392379" duration="601000" />
       <workItem from="1623674214558" duration="1430000" />
       <workItem from="1623766006458" duration="1818000" />
-      <workItem from="1623939658980" duration="589000" />
-    </task>
-    <task id="LOCAL-00012" summary="算法题：&#10;一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：&#10;'A' -&gt; 1&#10;'B' -&gt; 2&#10;...&#10;'Z' -&gt; 26&#10;要 解码 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，&quot;111&quot; 可以将 &quot;1&quot; 中的每个 &quot;1&quot; 映射为 &quot;A&quot; ，从而得到 &quot;AAA&quot; ，或者可以将 &quot;11&quot; 和 &quot;1&quot;（分别为 &quot;K&quot; 和 &quot;A&quot; ）映射为 &quot;KA&quot; 。注意，&quot;06&quot; 不能映射为 &quot;F&quot; ，因为 &quot;6&quot; 和 &quot;06&quot; 不同。&#10;给你一个只含数字的 非空 字符串 num ，请计算并返回 解码 方法的 总数 。&#10;题目数据保证答案肯定是一个 32 位 的整数。&#10;示例 1：&#10;输入：s = &quot;12&quot;&#10;输出：2&#10;解释：它可以解码为 &quot;AB&quot;（1 2）或者 &quot;L&quot;（12）。&#10;示例 2：&#10;输入：s = &quot;226&quot;&#10;输出：3&#10;解释：它可以解码为 &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), 或者 &quot;BBF&quot; (2 2 6) 。&#10;示例 3：&#10;输入：s = &quot;0&quot;&#10;输出：0&#10;解释：没有字符映射到以 0 开头的数字。含有 0 的有效映射是 'J' -&gt; &quot;10&quot; 和 'T'-&gt; &quot;20&quot; 。由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。&#10;示例 4：&#10;输入：s = &quot;06&quot;&#10;输出：0&#10;解释：&quot;06&quot; 不能映射到 &quot;F&quot; ，因为字符串开头的 0 无法指向一个有效的字符。 ">
-      <created>1618138958310</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1618138958310</updated>
+      <workItem from="1623939658980" duration="1599000" />
     </task>
     <task id="LOCAL-00013" summary="算法题：&#10;给你单链表的头指针 head 和两个整数 left 和 right ，其中 left &lt;= right 。请你反转从位置 left 到位置 right 的链表节点，返回 反转后的链表 。&#10;示例 1：&#10;输入：head = [1,2,3,4,5], left = 2, right = 4&#10;输出：[1,4,3,2,5]&#10;示例 2：&#10;输入：head = [5], left = 1, right = 1&#10;输出：[5]">
       <created>1618150200509</created>
@@ -644,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623594590578</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。&#10;push(x) —— 将元素 x 推入栈中。&#10;pop()—— 删除栈顶的元素。&#10;top()—— 获取栈顶元素。&#10;getMin() —— 检索栈中的最小元素。&#10;&#10;示例:&#10;&#10;输入：&#10;[&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]&#10;[[],[-2],[0],[-3],[],[],[],[]]&#10;&#10;输出：&#10;[null,null,null,null,-3,null,0,-2]&#10;&#10;解释：&#10;MinStack minStack = new MinStack();&#10;minStack.push(-2);&#10;minStack.push(0);&#10;minStack.push(-3);&#10;minStack.getMin();   --&gt; 返回 -3.&#10;minStack.pop();&#10;minStack.top();      --&gt; 返回 0.&#10;minStack.getMin();   --&gt; 返回 -2.">
+      <created>1623940606068</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1623940606068</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +690,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="给定一个完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。二叉树定义如下：&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。" />
     <MESSAGE value="给定一个二叉树&#10;struct Node {&#10;  int val;&#10;  Node *left;&#10;  Node *right;&#10;  Node *next;&#10;}&#10;填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。&#10;初始状态下，所有next 指针都被设置为 NULL。&#10;进阶：&#10;你只能使用常量级额外空间。&#10;使用递归解题也符合要求，本题中递归程序占用的栈空间不算做额外的空间复杂度。" />
     <MESSAGE value="给定一个非负整数numRows，生成杨辉三角的前numRows行。&#10;在杨辉三角中，每个数是它左上方和右上方的数的和。&#10;示例:&#10;输入: 5&#10;输出:&#10;[&#10;     [1],&#10;    [1,1],&#10;   [1,2,1],&#10;  [1,3,3,1],&#10; [1,4,6,4,1]&#10;]" />
     <MESSAGE value="给定一个非负索引k，其中 k≤33，返回杨辉三角的第 k 行。&#10;在杨辉三角中，每个数是它左上方和右上方的数的和。&#10;示例:&#10;输入: 3&#10;输出: [1,3,3,1]&#10;进阶：&#10;你可以优化你的算法到 O(k) 空间复杂度吗？" />
@@ -713,7 +714,8 @@
     <MESSAGE value="对链表进行插入排序。&#10;插入排序的动画演示如上。从第一个元素开始，该链表可以被认为已经部分排序（用黑色表示）。&#10;每次迭代时，从输入数据中移除一个元素（用红色表示），并原地将其插入到已排好序的链表中。&#10;插入排序算法：&#10;插入排序是迭代的，每次只移动一个元素，直到所有元素可以形成一个有序的输出列表。&#10;每次迭代中，插入排序只从输入数据中移除一个待排序的元素，找到它在序列中适当的位置，并将其插入。&#10;重复直到所有输入数据插入完为止。&#10;示例1：&#10;输入: 4-&gt;2-&gt;1-&gt;3&#10;输出: 1-&gt;2-&gt;3-&gt;4&#10;示例2：&#10;输入: -1-&gt;5-&gt;3-&gt;4-&gt;0&#10;输出: -1-&gt;0-&gt;3-&gt;4-&gt;5" />
     <MESSAGE value="给你链表的头结点head，请将其按 升序 排列并返回 排序后的链表 。&#10;&#10;进阶：&#10;你可以在O(nlogn) 时间复杂度和常数级空间复杂度下，对链表进行排序吗？" />
     <MESSAGE value="根据 逆波兰表示法，求表达式的值。&#10;有效的算符包括+、-、*、/。每个运算对象可以是整数，也可以是另一个逆波兰表达式。&#10;说明：&#10;整数除法只保留整数部分。&#10;给定逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。&#10;示例1：&#10;输入：tokens = [&quot;2&quot;,&quot;1&quot;,&quot;+&quot;,&quot;3&quot;,&quot;*&quot;]&#10;输出：9&#10;解释：该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9&#10;示例2：&#10;输入：tokens = [&quot;4&quot;,&quot;13&quot;,&quot;5&quot;,&quot;/&quot;,&quot;+&quot;]&#10;输出：6&#10;解释：该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6&#10;示例3：&#10;输入：tokens = [&quot;10&quot;,&quot;6&quot;,&quot;9&quot;,&quot;3&quot;,&quot;+&quot;,&quot;-11&quot;,&quot;*&quot;,&quot;/&quot;,&quot;*&quot;,&quot;17&quot;,&quot;+&quot;,&quot;5&quot;,&quot;+&quot;]&#10;输出：22&#10;解释：&#10;该算式转化为常见的中缀算术表达式为：&#10;  ((10 * (6 / ((9 + 3) * -11))) + 17) + 5&#10;= ((10 * (6 / (12 * -11))) + 17) + 5&#10;= ((10 * (6 / -132)) + 17) + 5&#10;= ((10 * 0) + 17) + 5&#10;= (0 + 17) + 5&#10;= 17 + 5&#10;= 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="根据 逆波兰表示法，求表达式的值。&#10;有效的算符包括+、-、*、/。每个运算对象可以是整数，也可以是另一个逆波兰表达式。&#10;说明：&#10;整数除法只保留整数部分。&#10;给定逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。&#10;示例1：&#10;输入：tokens = [&quot;2&quot;,&quot;1&quot;,&quot;+&quot;,&quot;3&quot;,&quot;*&quot;]&#10;输出：9&#10;解释：该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9&#10;示例2：&#10;输入：tokens = [&quot;4&quot;,&quot;13&quot;,&quot;5&quot;,&quot;/&quot;,&quot;+&quot;]&#10;输出：6&#10;解释：该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6&#10;示例3：&#10;输入：tokens = [&quot;10&quot;,&quot;6&quot;,&quot;9&quot;,&quot;3&quot;,&quot;+&quot;,&quot;-11&quot;,&quot;*&quot;,&quot;/&quot;,&quot;*&quot;,&quot;17&quot;,&quot;+&quot;,&quot;5&quot;,&quot;+&quot;]&#10;输出：22&#10;解释：&#10;该算式转化为常见的中缀算术表达式为：&#10;  ((10 * (6 / ((9 + 3) * -11))) + 17) + 5&#10;= ((10 * (6 / (12 * -11))) + 17) + 5&#10;= ((10 * (6 / -132)) + 17) + 5&#10;= ((10 * 0) + 17) + 5&#10;= (0 + 17) + 5&#10;= 17 + 5&#10;= 22" />
+    <MESSAGE value="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。&#10;push(x) —— 将元素 x 推入栈中。&#10;pop()—— 删除栈顶的元素。&#10;top()—— 获取栈顶元素。&#10;getMin() —— 检索栈中的最小元素。&#10;&#10;示例:&#10;&#10;输入：&#10;[&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]&#10;[[],[-2],[0],[-3],[],[],[],[]]&#10;&#10;输出：&#10;[null,null,null,null,-3,null,0,-2]&#10;&#10;解释：&#10;MinStack minStack = new MinStack();&#10;minStack.push(-2);&#10;minStack.push(0);&#10;minStack.push(-3);&#10;minStack.getMin();   --&gt; 返回 -3.&#10;minStack.pop();&#10;minStack.top();      --&gt; 返回 0.&#10;minStack.getMin();   --&gt; 返回 -2." />
+    <option name="LAST_COMMIT_MESSAGE" value="设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。&#10;push(x) —— 将元素 x 推入栈中。&#10;pop()—— 删除栈顶的元素。&#10;top()—— 获取栈顶元素。&#10;getMin() —— 检索栈中的最小元素。&#10;&#10;示例:&#10;&#10;输入：&#10;[&quot;MinStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;getMin&quot;,&quot;pop&quot;,&quot;top&quot;,&quot;getMin&quot;]&#10;[[],[-2],[0],[-3],[],[],[],[]]&#10;&#10;输出：&#10;[null,null,null,null,-3,null,0,-2]&#10;&#10;解释：&#10;MinStack minStack = new MinStack();&#10;minStack.push(-2);&#10;minStack.push(0);&#10;minStack.push(-3);&#10;minStack.getMin();   --&gt; 返回 -3.&#10;minStack.pop();&#10;minStack.top();      --&gt; 返回 0.&#10;minStack.getMin();   --&gt; 返回 -2." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
