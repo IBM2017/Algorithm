@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="根据 逆波兰表示法，求表达式的值。&#10;有效的算符包括+、-、*、/。每个运算对象可以是整数，也可以是另一个逆波兰表达式。&#10;说明：&#10;整数除法只保留整数部分。&#10;给定逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。&#10;示例1：&#10;输入：tokens = [&quot;2&quot;,&quot;1&quot;,&quot;+&quot;,&quot;3&quot;,&quot;*&quot;]&#10;输出：9&#10;解释：该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9&#10;示例2：&#10;输入：tokens = [&quot;4&quot;,&quot;13&quot;,&quot;5&quot;,&quot;/&quot;,&quot;+&quot;]&#10;输出：6&#10;解释：该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6&#10;示例3：&#10;输入：tokens = [&quot;10&quot;,&quot;6&quot;,&quot;9&quot;,&quot;3&quot;,&quot;+&quot;,&quot;-11&quot;,&quot;*&quot;,&quot;/&quot;,&quot;*&quot;,&quot;17&quot;,&quot;+&quot;,&quot;5&quot;,&quot;+&quot;]&#10;输出：22&#10;解释：&#10;该算式转化为常见的中缀算术表达式为：&#10;  ((10 * (6 / ((9 + 3) * -11))) + 17) + 5&#10;= ((10 * (6 / (12 * -11))) + 17) + 5&#10;= ((10 * (6 / -132)) + 17) + 5&#10;= ((10 * 0) + 17) + 5&#10;= (0 + 17) + 5&#10;= 17 + 5&#10;= 22">
-      <change afterPath="$PROJECT_DIR$/src/寻找旋转排序数组中的最小值2/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="根据 逆波兰表示法，求表达式的值。&#10;有效的算符包括+、-、*、/。每个运算对象可以是整数，也可以是另一个逆波兰表达式。&#10;说明：&#10;整数除法只保留整数部分。&#10;给定逆波兰表达式总是有效的。换句话说，表达式总会得出有效数值且不存在除数为 0 的情况。&#10;示例1：&#10;输入：tokens = [&quot;2&quot;,&quot;1&quot;,&quot;+&quot;,&quot;3&quot;,&quot;*&quot;]&#10;输出：9&#10;解释：该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9&#10;示例2：&#10;输入：tokens = [&quot;4&quot;,&quot;13&quot;,&quot;5&quot;,&quot;/&quot;,&quot;+&quot;]&#10;输出：6&#10;解释：该算式转化为常见的中缀算术表达式为：(4 + (13 / 5)) = 6&#10;示例3：&#10;输入：tokens = [&quot;10&quot;,&quot;6&quot;,&quot;9&quot;,&quot;3&quot;,&quot;+&quot;,&quot;-11&quot;,&quot;*&quot;,&quot;/&quot;,&quot;*&quot;,&quot;17&quot;,&quot;+&quot;,&quot;5&quot;,&quot;+&quot;]&#10;输出：22&#10;解释：&#10;该算式转化为常见的中缀算术表达式为：&#10;  ((10 * (6 / ((9 + 3) * -11))) + 17) + 5&#10;= ((10 * (6 / (12 * -11))) + 17) + 5&#10;= ((10 * (6 / -132)) + 17) + 5&#10;= ((10 * 0) + 17) + 5&#10;= (0 + 17) + 5&#10;= 17 + 5&#10;= 22" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,15 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -304,6 +299,7 @@
       <workItem from="1623641392379" duration="601000" />
       <workItem from="1623674214558" duration="1430000" />
       <workItem from="1623766006458" duration="1818000" />
+      <workItem from="1623939658980" duration="589000" />
     </task>
     <task id="LOCAL-00012" summary="算法题：&#10;一条包含字母 A-Z 的消息通过以下映射进行了 编码 ：&#10;'A' -&gt; 1&#10;'B' -&gt; 2&#10;...&#10;'Z' -&gt; 26&#10;要 解码 已编码的消息，所有数字必须基于上述映射的方法，反向映射回字母（可能有多种方法）。例如，&quot;111&quot; 可以将 &quot;1&quot; 中的每个 &quot;1&quot; 映射为 &quot;A&quot; ，从而得到 &quot;AAA&quot; ，或者可以将 &quot;11&quot; 和 &quot;1&quot;（分别为 &quot;K&quot; 和 &quot;A&quot; ）映射为 &quot;KA&quot; 。注意，&quot;06&quot; 不能映射为 &quot;F&quot; ，因为 &quot;6&quot; 和 &quot;06&quot; 不同。&#10;给你一个只含数字的 非空 字符串 num ，请计算并返回 解码 方法的 总数 。&#10;题目数据保证答案肯定是一个 32 位 的整数。&#10;示例 1：&#10;输入：s = &quot;12&quot;&#10;输出：2&#10;解释：它可以解码为 &quot;AB&quot;（1 2）或者 &quot;L&quot;（12）。&#10;示例 2：&#10;输入：s = &quot;226&quot;&#10;输出：3&#10;解释：它可以解码为 &quot;BZ&quot; (2 26), &quot;VF&quot; (22 6), 或者 &quot;BBF&quot; (2 2 6) 。&#10;示例 3：&#10;输入：s = &quot;0&quot;&#10;输出：0&#10;解释：没有字符映射到以 0 开头的数字。含有 0 的有效映射是 'J' -&gt; &quot;10&quot; 和 'T'-&gt; &quot;20&quot; 。由于没有字符，因此没有有效的方法对此进行解码，因为所有数字都需要映射。&#10;示例 4：&#10;输入：s = &quot;06&quot;&#10;输出：0&#10;解释：&quot;06&quot; 不能映射到 &quot;F&quot; ，因为字符串开头的 0 无法指向一个有效的字符。 ">
       <created>1618138958310</created>
