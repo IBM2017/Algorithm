@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一个整数 n，返回 n! 结果尾数中零的数量。&#10;&#10;示例 1:&#10;输入: 3&#10;输出: 0&#10;解释:3! = 6, 尾数中没有零。&#10;示例2:&#10;输入: 5&#10;输出: 1&#10;解释:5! = 120, 尾数中有 1 个零.">
-      <change afterPath="$PROJECT_DIR$/src/最大数/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="48a252d0-9b25-4197-868a-c1b872cf5fb4" name="Default Changelist" comment="给定一组非负整数 nums，重新排列每个数的顺序（每个数不可拆分）使之组成一个最大的整数。&#10;注意：输出结果可能非常大，所以你需要返回一个字符串而不是整数。&#10;示例 1：&#10;输入：nums = [10,2]&#10;输出：&quot;210&quot;&#10;示例2：&#10;输入：nums = [3,30,34,5,9]&#10;输出：&quot;9534330&quot;&#10;示例 3：&#10;输入：nums = [1]&#10;输出：&quot;1&quot;&#10;示例 4：&#10;输入：nums = [10]&#10;输出：&quot;10&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,14 +304,7 @@
       <workItem from="1624708473788" duration="6852000" />
       <workItem from="1624791456662" duration="1982000" />
       <workItem from="1625306482591" duration="678000" />
-      <workItem from="1625577008482" duration="454000" />
-    </task>
-    <task id="LOCAL-00024" summary="给定一个二叉树，返回其节点值的锯齿形层序遍历。（即先从左往右，再从右往左进行下一层遍历，以此类推，层与层之间交替进行）。&#10;例如：&#10;给定二叉树 [3,9,20,null,null,15,7],&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回锯齿形层序遍历如下：&#10;[&#10;  [3],&#10;  [20,9],&#10;  [15,7]&#10;]">
-      <created>1619239292355</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1619239292355</updated>
+      <workItem from="1625577008482" duration="1507000" />
     </task>
     <task id="LOCAL-00025" summary="给定一个二叉树，找出其最大深度。&#10;二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。&#10;说明: 叶子节点是指没有子节点的节点。&#10;示例：&#10;给定二叉树 [3,9,20,null,null,15,7]，&#10;    3&#10;   / \&#10;  9  20&#10;    /  \&#10;   15   7&#10;返回它的最大深度 3 。">
       <created>1619240030323</created>
@@ -652,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624717160913</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="给定一组非负整数 nums，重新排列每个数的顺序（每个数不可拆分）使之组成一个最大的整数。&#10;注意：输出结果可能非常大，所以你需要返回一个字符串而不是整数。&#10;示例 1：&#10;输入：nums = [10,2]&#10;输出：&quot;210&quot;&#10;示例2：&#10;输入：nums = [3,30,34,5,9]&#10;输出：&quot;9534330&quot;&#10;示例 3：&#10;输入：nums = [1]&#10;输出：&quot;1&quot;&#10;示例 4：&#10;输入：nums = [10]&#10;输出：&quot;10&quot;">
+      <created>1625577576952</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1625577576952</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -696,7 +693,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="老师想给孩子们分发糖果，有 N个孩子站成了一条直线，老师会根据每个孩子的表现，预先给他们评分。&#10;你需要按照以下要求，帮助老师给这些孩子分发糖果：&#10;每个孩子至少分配到 1 个糖果。&#10;评分更高的孩子必须比他两侧的邻位孩子获得更多的糖果。&#10;那么这样下来，老师至少需要准备多少颗糖果呢？&#10;示例1：&#10;输入：[1,0,2]&#10;输出：5&#10;解释：你可以分别给这三个孩子分发 2、1、2 颗糖果。&#10;示例2：&#10;输入：[1,2,2]&#10;输出：4&#10;解释：你可以分别给这三个孩子分发 1、2、1 颗糖果。&#10;     第三个孩子只得到 1 颗糖果，这已满足上述两个条件。" />
     <MESSAGE value="给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。&#10;说明：&#10;你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？&#10;示例 1:&#10;输入: [2,2,1]&#10;输出: 1&#10;示例2:&#10;输入: [4,1,2,1,2]&#10;输出: 4" />
     <MESSAGE value="给你一个整数数组nums ，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次 。请你找出并返回那个只出现了一次的元素。&#10;示例 1：&#10;输入：nums = [2,2,3,2]&#10;输出：3&#10;示例 2：&#10;输入：nums = [0,1,0,1,0,1,99]&#10;输出：99" />
     <MESSAGE value="给定一个非空字符串 s 和一个包含非空单词的列表 wordDict，判定s 是否可以被空格拆分为一个或多个在字典中出现的单词。&#10;说明：&#10;拆分时可以重复使用字典中的单词。&#10;你可以假设字典中没有重复的单词。&#10;示例 1：&#10;输入: s = &quot;leetcode&quot;, wordDict = [&quot;leet&quot;, &quot;code&quot;]&#10;输出: true&#10;解释: 返回 true 因为 &quot;leetcode&quot; 可以被拆分成 &quot;leet code&quot;。&#10;示例 2：&#10;输入: s = &quot;applepenapple&quot;, wordDict = [&quot;apple&quot;, &quot;pen&quot;]&#10;输出: true&#10;解释: 返回 true 因为 &quot;applepenapple&quot; 可以被拆分成 &quot;apple pen apple&quot;。&#10;注意你可以重复使用字典中的单词。&#10;示例 3：&#10;输入: s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;, &quot;dog&quot;, &quot;sand&quot;, &quot;and&quot;, &quot;cat&quot;]&#10;输出: false" />
@@ -721,7 +717,8 @@
     <MESSAGE value="给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数 大于⌊ n/2 ⌋的元素。&#10;你可以假设数组是非空的，并且给定的数组总是存在多数元素。&#10;示例1：&#10;输入：[3,2,3]&#10;输出：3&#10;示例2：&#10;输入：[2,2,1,1,1,2,2]&#10;输出：2" />
     <MESSAGE value="给定一个Excel表格中的列名称，返回其相应的列序号。&#10;例如，&#10;    A -&gt; 1&#10;    B -&gt; 2&#10;    C -&gt; 3&#10;    ...&#10;    Z -&gt; 26&#10;    AA -&gt; 27&#10;    AB -&gt; 28 &#10;    ...&#10;示例 1:&#10;输入: &quot;A&quot;&#10;输出: 1&#10;示例2:&#10;输入: &quot;AB&quot;&#10;输出: 28&#10;示例3:&#10;输入: &quot;ZY&quot;&#10;输出: 701" />
     <MESSAGE value="给定一个整数 n，返回 n! 结果尾数中零的数量。&#10;&#10;示例 1:&#10;输入: 3&#10;输出: 0&#10;解释:3! = 6, 尾数中没有零。&#10;示例2:&#10;输入: 5&#10;输出: 1&#10;解释:5! = 120, 尾数中有 1 个零." />
-    <option name="LAST_COMMIT_MESSAGE" value="给定一个整数 n，返回 n! 结果尾数中零的数量。&#10;&#10;示例 1:&#10;输入: 3&#10;输出: 0&#10;解释:3! = 6, 尾数中没有零。&#10;示例2:&#10;输入: 5&#10;输出: 1&#10;解释:5! = 120, 尾数中有 1 个零." />
+    <MESSAGE value="给定一组非负整数 nums，重新排列每个数的顺序（每个数不可拆分）使之组成一个最大的整数。&#10;注意：输出结果可能非常大，所以你需要返回一个字符串而不是整数。&#10;示例 1：&#10;输入：nums = [10,2]&#10;输出：&quot;210&quot;&#10;示例2：&#10;输入：nums = [3,30,34,5,9]&#10;输出：&quot;9534330&quot;&#10;示例 3：&#10;输入：nums = [1]&#10;输出：&quot;1&quot;&#10;示例 4：&#10;输入：nums = [10]&#10;输出：&quot;10&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="给定一组非负整数 nums，重新排列每个数的顺序（每个数不可拆分）使之组成一个最大的整数。&#10;注意：输出结果可能非常大，所以你需要返回一个字符串而不是整数。&#10;示例 1：&#10;输入：nums = [10,2]&#10;输出：&quot;210&quot;&#10;示例2：&#10;输入：nums = [3,30,34,5,9]&#10;输出：&quot;9534330&quot;&#10;示例 3：&#10;输入：nums = [1]&#10;输出：&quot;1&quot;&#10;示例 4：&#10;输入：nums = [10]&#10;输出：&quot;10&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
